@@ -1,0 +1,118 @@
+.hero__wrapper {
+  justify-content: space-around;
+  position: relative;
+  margin-top: 5rem;
+}
+/* ------------------------------ Left Item------------------------------ */
+.hero__left-item {
+  position: absolute;
+  top: 10rem;
+  left: 25rem;
+  border: 2px solid lightgoldenrodyellow;
+  padding: 2rem;
+  line-height: 350%;
+}
+
+.hero__left-item h1 {
+  color: var(--light-color);
+  font-size: var(--font-size-3xl);
+}
+
+.hero__left-item p {
+  color: var(--light-color);
+  font-size: var(--font-size-md);
+  margin: 1.5rem 0;
+}
+
+.gradient-text1 {
+  background-image: linear-gradient(
+    60deg,
+    #674fe5 5%,
+    #df50e5 20%,
+    #674fe5 55%,
+    #df50e5 66.666%,
+    #674fe5 83.333%,
+    #df50e5 90%
+  );
+
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0.3rem transparent;
+  color: var(--dark-color);
+
+  animation: gradient-text1-animation-rev 0.5s ease forwards;
+  cursor: pointer;
+}
+
+.gradient-text1:hover {
+  animation: gradient-text1-animation 0.3s ease-in forwards;
+}
+
+@keyframes gradient-text1-animation-rev {
+  0% {
+    background-size: 400%;
+  }
+  40% {
+    background-size: 400%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes gradient-text1-animation {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 400%;
+  }
+  100% {
+    background-size: 400%;
+  }
+}
+
+/* ------------------------------ Right Item------------------------------ */
+.hero__right-item {
+  position: absolute;
+}
+
+.right-item__main-image {
+  position: absolute;
+  top: 5rem;
+  left: -12rem;
+  animation: astronaut-movement 10s linear alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes astronaut-movement {
+  0% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(5rem);
+  }
+}
+
+@-webkit-keyframes astronaut-movement {
+  0% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(5rem);
+  }
+}
+
+.main-image__astronaut {
+  position: absolute;
+  top: -4rem;
+  left: 34rem;
+  z-index: 1;
+}
+
+.main-image__astronaut-bg {
+  position: absolute;
+  left: 20rem;
+}
