@@ -8,7 +8,6 @@
   position: absolute;
   top: 10rem;
   left: 25rem;
-  border: 2px solid lightgoldenrodyellow;
   padding: 2rem;
   line-height: 350%;
 }
@@ -35,7 +34,6 @@
     #df50e5 90%
   );
 
-  background-repeat: repeat;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 0.3rem transparent;
@@ -45,7 +43,7 @@
   cursor: pointer;
 }
 
-.gradient-text1:hover {
+.hero__left-item:hover .gradient-text1 {
   animation: gradient-text1-animation 0.3s ease-in forwards;
 }
 
@@ -115,4 +113,138 @@
 .main-image__astronaut-bg {
   position: absolute;
   left: 20rem;
+}
+
+/* ------------------------------ Shapes ------------------------------ */
+.shapes {
+  border-radius: 50%;
+  background: linear-gradient(46deg, #674fe5, #df50e5);
+  z-index: -1;
+}
+
+.item-w-16 {
+  position: absolute;
+  top: 10rem;
+  left: 120rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.item-w-22 {
+  position: absolute;
+  top: 45rem;
+  left: 65rem;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.item-w-32 {
+  position: absolute;
+  top: 43rem;
+  left: 153rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.item-w-48 {
+  position: absolute;
+  top: 35rem;
+  left: 105rem;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.item-w-68 {
+  position: absolute;
+  top: 12rem;
+  left: 158rem;
+  width: 6.8rem;
+  height: 6.8rem;
+}
+
+.item-w-51 {
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+}
+
+.position1 {
+  position: absolute;
+  top: -2rem;
+  left: 93rem;
+}
+
+.position2 {
+  position: absolute;
+  top: 0rem;
+  left: 170rem;
+}
+
+.outer {
+  position: relative;
+  margin: 5rem;
+  width: 4.7rem;
+  height: 4.7rem;
+  background-color: var(--dark-color);
+  border-radius: 50%;
+}
+
+.inner {
+  width: 5.1rem;
+  height: 5.1rem;
+  border-radius: 50%;
+  background: linear-gradient(46deg, #674fe5, #df50e5);
+  content: "";
+  position: absolute;
+  top: -0.2rem;
+  left: -0.2rem;
+  z-index: -1;
+}
+
+.item-w-16,
+.item-w-32,
+.item-w-51 {
+  animation: move-left-right 10s linear alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes move-left-right {
+  0% {
+    transform: translateX(5rem);
+  }
+  100% {
+    transform: translateX(-5rem);
+  }
+}
+
+@-webkit-keyframes move-left-right {
+  0% {
+    transform: translateX(5rem);
+  }
+  100% {
+    transform: translateX(-5rem);
+  }
+}
+
+.item-w-22,
+.item-w-48,
+.item-w-68 {
+  animation: move-right-left 10s linear alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes move-right-left {
+  0% {
+    transform: translateX(-5rem);
+  }
+  100% {
+    transform: translateX(5rem);
+  }
+}
+
+@-webkit-keyframes move-right-left {
+  0% {
+    transform: translateX(-5rem);
+  }
+  100% {
+    transform: translateX(5rem);
+  }
 }
