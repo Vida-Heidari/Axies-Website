@@ -125,35 +125,35 @@
 .item-w-16 {
   position: absolute;
   top: 10rem;
-  left: 120rem;
+  left: 62%;
   width: 1.6rem;
   height: 1.6rem;
 }
 .item-w-22 {
   position: absolute;
   top: 45rem;
-  left: 65rem;
+  left: 34%;
   width: 2.2rem;
   height: 2.2rem;
 }
 .item-w-32 {
   position: absolute;
   top: 43rem;
-  left: 153rem;
+  left: 80%;
   width: 3.2rem;
   height: 3.2rem;
 }
 .item-w-48 {
   position: absolute;
   top: 35rem;
-  left: 105rem;
+  left: 48%;
   width: 4.8rem;
   height: 4.8rem;
 }
 .item-w-68 {
   position: absolute;
   top: 12rem;
-  left: 158rem;
+  left: 83%;
   width: 6.8rem;
   height: 6.8rem;
 }
@@ -166,14 +166,15 @@
 
 .position1 {
   position: absolute;
-  top: -2rem;
-  left: 93rem;
+  top: 12rem;
+  left: 44%;
+  z-index: -2;
 }
 
 .position2 {
   position: absolute;
-  top: 0rem;
-  left: 170rem;
+  top: -4rem;
+  left: 85%;
 }
 
 .outer {
@@ -247,4 +248,26 @@
   100% {
     transform: translateX(5rem);
   }
+}
+
+/* ------------------------------ Backgounds ------------------------------ */
+.bg1 img {
+  position: absolute;
+  left: -1%;
+  width: 35%;
+  z-index: -2;
+}
+
+.bg2 img {
+  position: absolute;
+  left: 70%;
+  bottom: 3%;
+  width: 20%;
+}
+
+.bg3 img {
+  position: absolute;
+  left: 84%;
+  top: 0;
+  width: 20%;
 }
