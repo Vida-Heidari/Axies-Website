@@ -41,6 +41,9 @@
 }
 
 /* ------------------------------ Nav ------------------------------ */
+.navbar__nav a.icon {
+  display: none;
+}
 
 .nav__item {
   padding: 0 0.5rem;

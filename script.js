@@ -19,3 +19,13 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//---------------------------- menu ------------------------------
+function myFunction() {
+  let myNav = document.getElementById("myTopnav");
+  if (myNav.className === "navbar__nav") {
+    myNav.className += "navbar__nav";
+  } else {
+    myNav.className = "navbar__nav";
+  }
+}

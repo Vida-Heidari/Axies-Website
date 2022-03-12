@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/07_collection.css" />
     <link rel="stylesheet" href="css/08_nfts.css" />
     <link rel="stylesheet" href="css/09_footer.css" />
+    <link rel="stylesheet" href="css/10_responsive.css" />
     <title>Axies</title>
   </head>
   <body>
@@ -35,7 +36,7 @@
           <div class="navbar__logo">
             <img src="images/01_header/logo_dark.png" alt="Axies" />
           </div>
-          <div class="navbar__nav">
+          <div class="navbar__nav" id="myTopnav">
             <ul class="nav__menu flex">
               <li class="nav__item">
                 <a href="#" class="nav__link"
@@ -123,7 +124,7 @@
 
               <li class="nav__item">
                 <a href="#" class="nav__link">
-                  <span class="hyphen">-</span> Explor
+                  Explor
                   <i class="fas fa-chevron-down fa-xs"></i>
                 </a>
 
@@ -302,6 +303,10 @@
                 </ul>
               </li>
             </ul>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
           </div>
 
           <div class="navbar__search">

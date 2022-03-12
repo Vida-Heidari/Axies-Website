@@ -39,6 +39,7 @@
   margin: 0.3rem;
   padding: 1rem;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .sellers__icons i:hover {
@@ -94,6 +95,11 @@
   align-items: center;
 
   cursor: grab;
+  transition: all 0.3s ease-in-out;
+}
+
+.seller:hover {
+  transform: translateY(-0.5rem);
 }
 
 .seller__avatar {
