@@ -1,0 +1,117 @@
+#nfts {
+  margin-bottom: 10rem;
+}
+
+.nfts__wrapper {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 0.5rem 0;
+  grid-template-areas:
+    "nfts__header"
+    "nfts__content";
+}
+
+/*----------------------------- NFTs Header---------------------------*/
+.nfts__header {
+  grid-area: nfts__header;
+}
+
+.nfts__header h2 {
+  font-size: var(--font-size-xl);
+}
+
+/*----------------------------- NFTs Content---------------------------*/
+.nfts__content {
+  grid-area: nfts__content;
+
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  grid-template-areas: "your-wallet creat-collection add-nfts list-theme";
+}
+
+.your-wallet {
+  grid-area: your-wallet;
+}
+
+.your-wallet i {
+  background-color: var(--accent-color);
+}
+
+.creat-collection {
+  grid-area: creat-collection;
+}
+
+.creat-collection i {
+  background-color: #47a432;
+}
+
+.add-nfts {
+  grid-area: add-nfts;
+}
+
+.add-nfts i {
+  background-color: #9835fb;
+}
+
+.list-theme {
+  grid-area: list-theme;
+}
+
+.nfts__content i {
+  font-size: var(--font-size-md);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  animation: rotateY-rev 0.8s forwards;
+}
+
+.nfts__content div:hover i {
+  animation: rotateY 0.8s forwards;
+}
+
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotateY-rev {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.list-theme i {
+  background-color: #df4949;
+  padding: 2rem 2.3rem;
+}
+
+.nfts__content h3 {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  color: var(--white-color);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.nfts__content h3:hover {
+  color: var(--accent-color);
+}
+
+.nfts__content p {
+  font-size: var(--font-size-xs);
+  font-weight: 300;
+  color: var(--white-color);
+}

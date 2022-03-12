@@ -1,0 +1,129 @@
+#top-seller {
+  margin-bottom: 15rem;
+}
+
+.sellers__wrapper {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr;
+  gap: 0 2rem;
+  grid-template-areas:
+    "sellers__header"
+    "sellers__about";
+}
+
+/* ------------------------------ Sellers Header ------------------------------ */
+.sellers__header {
+  grid-area: sellers__header;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* padding: 3rem 0; */
+}
+
+.sellers__header h3 {
+  font-size: var(--font-size-xl);
+}
+
+.sellers__icons i {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+  background-color: transparent;
+  color: var(--light-color);
+  margin: 0.3rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.sellers__icons i:hover {
+  background-color: var(--light-color);
+  color: var(--accent-color);
+  border-color: var(--light-color);
+}
+
+/* ------------------------------ Sellers About ------------------------------ */
+.sellers__about {
+  grid-area: sellers__about;
+
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 20px;
+  grid-template-areas: "seller1 seller2 seller3 seller4 seller5 seller6 seller7 seller8 seller9";
+}
+
+.seller1 {
+  grid-area: seller1;
+}
+.seller2 {
+  grid-area: seller2;
+}
+.seller3 {
+  grid-area: seller3;
+}
+.seller4 {
+  grid-area: seller4;
+}
+.seller5 {
+  grid-area: seller5;
+}
+.seller6 {
+  grid-area: seller6;
+}
+.seller7 {
+  grid-area: seller7;
+}
+.seller8 {
+  grid-area: seller8;
+}
+.seller9 {
+  grid-area: seller9;
+}
+
+.seller {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: grab;
+}
+
+.seller__avatar {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.seller__avatar img {
+  border-radius: var(--border-radius-4xl);
+}
+
+.seller__avatar i {
+  position: absolute;
+  top: 9rem;
+  right: 0rem;
+  font-size: var(--font-size-lg);
+  color: var(--accent-color);
+  background-color: var(--light-color);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.seller__name {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--light-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.seller__name:hover {
+  color: var(--accent-color);
+}

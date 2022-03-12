@@ -15,13 +15,23 @@
     <link rel="stylesheet" href="css/01_utilities.css" />
     <link rel="stylesheet" href="css/02_header.css" />
     <link rel="stylesheet" href="css/03_hero.css" />
+    <link rel="stylesheet" href="css/04_live-auction.css" />
+    <link rel="stylesheet" href="css/05_top-seller.css" />
+    <link rel="stylesheet" href="css/06_picks.css" />
+    <link rel="stylesheet" href="css/07_collection.css" />
+    <link rel="stylesheet" href="css/08_nfts.css" />
+    <link rel="stylesheet" href="css/09_footer.css" />
     <title>Axies</title>
   </head>
   <body>
-    <!-- ------------------------------ Header ------------------------------  -->
+    <!-------------------------------- Go Top Button -------------------------------->
+    <button onclick="topFunction()" id="myBtn">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <!-------------------------------- Header -------------------------------->
     <header id="header">
       <div class="container">
-        <div class="navbar flex">
+        <div class="navbar">
           <div class="navbar__logo">
             <img src="images/01_header/logo_dark.png" alt="Axies" />
           </div>
@@ -294,7 +304,7 @@
             </ul>
           </div>
 
-          <div class="navbar__search flex">
+          <div class="navbar__search">
             <div class="navbar__search-box flex">
               <input
                 type="text"
@@ -315,24 +325,19 @@
             </div>
 
             <div class="navbar__wallet">
-              <button class="btn btn__primary">
+              <button class="btn btn__primary wallet__btn">
                 <i class="fa-solid fa-wallet"></i> Wallet Connect
               </button>
             </div>
           </div>
-          <!-- <div class="navbar__mode flex">
-            <div class="mode__content">
-              <h4>Dark mode</h4>
-              <h3>Available</h3>
-            </div>
-
+          <!-- <div class="navbar__mode">
             <button class="mode light-mode">
               <img src="images/01_header/sun.png" alt="sun" />
             </button>
             <button class="mode dark-mode">
               <img src="images/01_header/moon-2.png" alt="moon" />
             </button>
-          </div> -->
+          </div>  -->
         </div>
       </div>
     </header>
@@ -341,7 +346,7 @@
       <!-- ------------------------------ Hero ------------------------------  -->
       <section id="hero">
         <div class="container">
-          <div class="hero__wrapper flex">
+          <div class="hero__wrapper">
             <div class="hero__left-item">
               <h1>
                 Discover, find,<br />
@@ -364,50 +369,1090 @@
 
             <div class="hero__right-item">
               <div class="right-item__main-image">
-                <div class="main-image__astronaut">
-                  <img src="images/02_hero/imgslider2.png" alt="Axies" />
+                <img src="images/02_hero/imgslider2.png" alt="Axies" />
+              </div>
+
+              <div class="shapes item-w-16"></div>
+              <div class="shapes item-w-22"></div>
+              <div class="shapes item-w-32"></div>
+              <div class="shapes item-w-48"></div>
+              <div class="item-w-51 position1">
+                <div class="outer">
+                  <div class="inner"></div>
+                </div>
+              </div>
+              <div class="item-w-51 position2">
+                <div class="outer">
+                  <div class="inner"></div>
+                </div>
+              </div>
+              <div class="shapes item-w-68"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------- live Auctions --------------------------- -->
+      <section id="live-auction">
+        <div class="container">
+          <div class="live__wrapper">
+            <div class="live__header">
+              <h3>Live Auctions</h3>
+              <a href="#" class="explore border__gradient"
+                ><h5>EXPLORE MORE</h5></a
+              >
+            </div>
+            <div class="live__posts">
+              <div class="post post1">
+                <div class="post__image">
+                  <img
+                    src="./images/03_Live Auctions/card-item8.jpg"
+                    alt="post"
+                  />
+
+                  <div class="post__rate">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+
+                  <div class="post__place-bid btn btn__primary">
+                    <i class="fa-solid fa-bag-shopping"></i> Place Bid
+                  </div>
+
+                  <div class="post__timer">
+                    <i class="fa-solid fa-fire-flame-curved"></i> 05 : 12 : 07 :
+                    45
+                  </div>
                 </div>
 
-                <div class="main-image__astronaut-bg">
+                <div class="post__title">
+                  <a href="#">
+                    <h3>"Hamlet Contemplates Conte...</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="post__content">
+                  <div class="content__left">
+                    <div class="content__left--avatar">
+                      <img
+                        src="./images/03_Live Auctions/avt-11.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content__left--about">
+                      <h6>Creator</h6>
+                      <h5>SalvadorDali</h5>
+                    </div>
+                  </div>
+                  <div class="content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post post2">
+                <div class="post__image">
                   <img
-                    src="images/02_hero/img-bg-sliderhome2.png"
-                    alt="Axies"
+                    src="./images/03_Live Auctions/image-box-10.jpg"
+                    alt="post"
+                  />
+
+                  <div class="post__rate">
+                    <i class="fa-solid fa-heart"></i> 220
+                  </div>
+
+                  <div class="post__place-bid btn btn__primary bid-active">
+                    <i class="fa-solid fa-bag-shopping"></i> Place Bid
+                  </div>
+
+                  <div class="post__timer">
+                    <i class="fa-solid fa-fire-flame-curved"></i> 01 : 16 : 25 :
+                    45
+                  </div>
+                </div>
+
+                <div class="post__title">
+                  <a href="#">
+                    <h3>"Triumphant Awakening Conte...</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="post__content">
+                  <div class="content__left">
+                    <div class="content__left--avatar">
+                      <img
+                        src="./images/03_Live Auctions/avt-12.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content__left--about">
+                      <h6>Creator</h6>
+                      <h5>Trista Francis</h5>
+                    </div>
+                  </div>
+                  <div class="content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="post post3">
+                <div class="post__image">
+                  <img
+                    src="./images/03_Live Auctions/image-box-11.jpg"
+                    alt="post"
+                  />
+
+                  <div class="post__rate">
+                    <i class="fa-solid fa-heart"></i> 90
+                  </div>
+
+                  <div class="post__place-bid btn btn__primary">
+                    <i class="fa-solid fa-bag-shopping"></i> Place Bid
+                  </div>
+
+                  <div class="post__timer">
+                    <i class="fa-solid fa-fire-flame-curved"></i> 03 : 12 : 42 :
+                    36
+                  </div>
+                </div>
+
+                <div class="post__title">
+                  <a href="#">
+                    <h3>"Living Vase 01 By Lanza...</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="post__content">
+                  <div class="content__left">
+                    <div class="content__left--avatar">
+                      <img
+                        src="./images/03_Live Auctions/avt-13.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content__left--about">
+                      <h6>Creator</h6>
+                      <h5>Freddie Carpenter</h5>
+                    </div>
+                  </div>
+                  <div class="content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="post post4">
+                <div class="post__image">
+                  <img
+                    src="./images/03_Live Auctions/image-box-21.jpg"
+                    alt="post"
+                  />
+
+                  <div class="post__rate">
+                    <i class="fa-solid fa-heart"></i> 145
+                  </div>
+
+                  <div class="post__place-bid btn btn__primary">
+                    <i class="fa-solid fa-bag-shopping"></i> Place Bid
+                  </div>
+
+                  <div class="post__timer">
+                    <i class="fa-solid fa-fire-flame-curved"></i> 08 : 03 : 47 :
+                    22
+                  </div>
+                </div>
+
+                <div class="post__title">
+                  <a href="#">
+                    <h3>"Flame Dress' By Balmai...</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="post__content">
+                  <div class="content__left">
+                    <div class="content__left--avatar">
+                      <img
+                        src="./images/03_Live Auctions/avt-14.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content__left--about">
+                      <h6>Creator</h6>
+                      <h5>tyler Coviengton</h5>
+                    </div>
+                  </div>
+                  <div class="content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------- Top Seller ---------------------------- -->
+      <section id="top-seller">
+        <div class="container">
+          <div class="sellers__wrapper">
+            <div class="sellers__header">
+              <h3>Top Seller</h3>
+
+              <div class="sellers__icons">
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="sellers__about">
+              <div class="seller seller1">
+                <div class="seller__avatar">
+                  <img src="./images/04_Top Seller/avt-1.jpg" alt="seller" />
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div class="seller__info">
+                  <a href="#" class="seller__name">
+                    <h4>Crispin Berry</h4>
+                  </a>
+                  <h5>214.2 ETH</h5>
+                </div>
+              </div>
+
+              <div class="seller seller2">
+                <div class="seller__avatar">
+                  <img src="./images/04_Top Seller/avt-2.jpg" alt="seller" />
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div class="seller__info">
+                  <a href="#" class="seller__name">
+                    <h4>Samson Frost</h4>
+                  </a>
+                  <h5>205.43 ETH</h5>
+                </div>
+              </div>
+
+              <div class="seller seller3">
+                <div class="seller__avatar">
+                  <img src="./images/04_Top Seller/avt-3.jpg" alt="seller" />
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div class="seller__info">
+                  <a href="#" class="seller__name">
+                    <h4>Tommy Alvarez</h4>
+                  </a>
+                  <h5>170.3 ETH</h5>
+                </div>
+              </div>
+
+              <div class="seller seller4">
+                <div class="seller__avatar">
+                  <img src="./images/04_Top Seller/avt-4.jpg" alt="seller" />
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div class="seller__info">
+                  <a href="#" class="seller__name">
+                    <h4>Windsor Lane</h4>
+                  </a>
+                  <h5>120.7 ETH</h5>
+                </div>
+              </div>
+
+              <div class="seller seller5">
+                <div class="seller__avatar">
+                  <img src="./images/04_Top Seller/avt-5.jpg" alt="seller" />
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div class="seller__info">
+                  <a href="#" class="seller__name">
+                    <h4>Andy Hurlbutt</h4>
+                  </a>
+                  <h5>82.79 ETH</h5>
+                </div>
+              </div>
+
+              <div class="seller seller6">
+                <div class="seller__avatar">
+                  <img src="./images/04_Top Seller/avt-6.jpg" alt="seller" />
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div class="seller__info">
+                  <a href="#" class="seller__name">
+                    <h4>Blake Banks</h4>
+                  </a>
+                  <h5>68.2 ETH</h5>
+                </div>
+              </div>
+
+              <div class="seller seller7">
+                <div class="seller__avatar">
+                  <img src="./images/04_Top Seller/avt-7.jpg" alt="seller" />
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div class="seller__info">
+                  <a href="#" class="seller__name">
+                    <h4>Monica Lucas</h4>
+                  </a>
+                  <h5>52.8 ETH</h5>
+                </div>
+              </div>
+
+              <div class="seller seller8">
+                <div class="seller__avatar">
+                  <img src="./images/04_Top Seller/avt-8.jpg" alt="seller" />
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div class="seller__info">
+                  <a href="#" class="seller__name">
+                    <h4>Matt Ramos</h4>
+                  </a>
+                  <h5>38.4 ETH</h5>
+                </div>
+              </div>
+
+              <div class="seller seller9">
+                <div class="seller__avatar">
+                  <img src="./images/04_Top Seller/avt-9.jpg" alt="seller" />
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div class="seller__info">
+                  <a href="#" class="seller__name">
+                    <h4>Harper Wilcher</h4>
+                  </a>
+                  <h5>29.2 ETH</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------- Today's Picks ---------------------------- -->
+      <section id="picks">
+        <div class="container">
+          <div class="picks__wrapper">
+            <div class="picks__header">
+              <h3>Today's Picks</h3>
+              <a href="#" class="explore border__gradient"
+                ><h5>EXPLORE MORE</h5></a
+              >
+            </div>
+
+            <div class="picks__buttons">
+              <div class="picks__buttons--left">
+                <button class="btn btn__secondary">
+                  <i class="fa-solid fa-layer-group"></i> Category
+                </button>
+
+                <button class="btn btn__secondary">
+                  <i class="fa-solid fa-circle-dollar-to-slot"></i> Price Range
+                </button>
+
+                <button class="btn btn__secondary">
+                  <i class="fa-solid fa-bolt"></i> Sale Type
+                </button>
+
+                <button class="btn btn__secondary">
+                  <i class="fa-solid fa-cube"></i> Blochchain
+                </button>
+              </div>
+
+              <div class="picks__buttons--right">
+                <buttons class="btn btn__secondary">
+                  <i class="fa-solid fa-grip-lines"></i> Sort By: Recently Added
+                </buttons>
+              </div>
+            </div>
+
+            <div class="picks__posts">
+              <div class="picks__post post1">
+                <div class="picks__post--image">
+                  <img
+                    src="./images/05_Today's Picks/card-item-1.jpg"
+                    alt="post"
+                  />
+
+                  <div class="picks__post--rate">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+                </div>
+
+                <div class="picks__post--title">
+                  <a href="#">
+                    <h3>"The RenaiXance Rising...</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="picks__post--content">
+                  <div class="post--content__left">
+                    <div class="content--left__avatar">
+                      <img
+                        src="./images/05_Today's Picks/avt-1.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content--left__about">
+                      <h6>Owned by</h6>
+                      <h5>SalvadorDali</h5>
+                    </div>
+                  </div>
+                  <div class="post--content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+
+                <div class="picks__post--footer">
+                  <button class="btn btn__fourthly">
+                    <i class="fa-solid fa-bag-shopping"></i> Place Bid
+                  </button>
+                  <h5>
+                    <i class="fa-solid fa-arrows-rotate"></i> View History
+                  </h5>
+                </div>
+              </div>
+
+              <div class="picks__post post2">
+                <div class="picks__post--image image2">
+                  <img
+                    src="./images/05_Today's Picks/card-item-2.jpg"
+                    alt="post"
+                  />
+
+                  <div class="picks__post--coming-soon">Comming Soon</div>
+
+                  <div class="picks__post--rate">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+                </div>
+
+                <div class="picks__post--title">
+                  <a href="#">
+                    <h3>"Space Babe - Night 2/25"</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="picks__post--content">
+                  <div class="post--content__left">
+                    <div class="content--left__avatar">
+                      <img
+                        src="./images/05_Today's Picks/avt-2.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content--left__about">
+                      <h6>Owned by</h6>
+                      <h5>SalvadorDali</h5>
+                    </div>
+                  </div>
+                  <div class="post--content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="picks__post post3">
+                <div class="picks__post--image">
+                  <img
+                    src="./images/05_Today's Picks/card-item-3.jpg"
+                    alt="post"
+                  />
+
+                  <div class="picks__post--rate">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+                </div>
+
+                <div class="picks__post--title">
+                  <a href="#">
+                    <h3>"CyberPrimal 042 LAN"</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="picks__post--content">
+                  <div class="post--content__left">
+                    <div class="content--left__avatar">
+                      <img
+                        src="./images/05_Today's Picks/avt-3.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content--left__about">
+                      <h6>Owned by</h6>
+                      <h5>SalvadorDali</h5>
+                    </div>
+                  </div>
+                  <div class="post--content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+
+                <div class="picks__post--footer">
+                  <button class="btn btn__fourthly">
+                    <i class="fa-solid fa-bag-shopping"></i> Place Bid
+                  </button>
+                  <h5>
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    View Story
+                  </h5>
+                </div>
+              </div>
+
+              <div class="picks__post post4">
+                <div class="picks__post--image">
+                  <img
+                    src="./images/05_Today's Picks/card-item-4.jpg"
+                    alt="post"
+                  />
+
+                  <div class="picks__post--rate">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+                </div>
+
+                <div class="picks__post--title">
+                  <a href="#">
+                    <h3>"Crypto Egg Stamp #5"</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="picks__post--content">
+                  <div class="post--content__left">
+                    <div class="content--left__avatar">
+                      <img
+                        src="./images/05_Today's Picks/avt-4.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content--left__about">
+                      <h6>Owned by</h6>
+                      <h5>SalvadorDali</h5>
+                    </div>
+                  </div>
+                  <div class="post--content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+
+                <div class="picks__post--footer">
+                  <button class="btn btn__fourthly">
+                    <i class="fa-solid fa-bag-shopping"></i> Place Bid
+                  </button>
+                  <h5>
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    View Story
+                  </h5>
+                </div>
+              </div>
+
+              <div class="picks__post post5">
+                <div class="picks__post--image">
+                  <img
+                    src="./images/05_Today's Picks/card-item-5.jpg"
+                    alt="post"
+                  />
+
+                  <div class="picks__post--rate">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+                </div>
+
+                <div class="picks__post--title">
+                  <a href="#">
+                    <h3>"Travel Monkey Club #45"</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="picks__post--content">
+                  <div class="post--content__left">
+                    <div class="content--left__avatar">
+                      <img
+                        src="./images/05_Today's Picks/avt-5.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content--left__about">
+                      <h6>Owned by</h6>
+                      <h5>Ralph Garraway</h5>
+                    </div>
+                  </div>
+                  <div class="post--content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+
+                <div class="picks__post--footer">
+                  <button class="btn btn__fourthly">
+                    <i class="fa-solid fa-bag-shopping"></i> Place Bid
+                  </button>
+                  <h5>
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    View Story
+                  </h5>
+                </div>
+              </div>
+
+              <div class="picks__post post6">
+                <div class="picks__post--image">
+                  <img
+                    src="./images/05_Today's Picks/card-item-6.jpg"
+                    alt="post"
+                  />
+
+                  <div class="picks__post--rate">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+                </div>
+
+                <div class="picks__post--title">
+                  <a href="#">
+                    <h3>"Sir. Lion Swang #371"</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="picks__post--content">
+                  <div class="post--content__left">
+                    <div class="content--left__avatar">
+                      <img
+                        src="./images/05_Today's Picks/avt-1.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content--left__about">
+                      <h6>Owned by</h6>
+                      <h5>Mason Woodward</h5>
+                    </div>
+                  </div>
+                  <div class="post--content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+
+                <div class="picks__post--footer">
+                  <button class="btn btn__fourthly">
+                    <i class="fa-solid fa-bag-shopping"></i> Place Bid
+                  </button>
+                  <h5>
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    View Story
+                  </h5>
+                </div>
+              </div>
+
+              <div class="picks__post post7">
+                <div class="picks__post--image">
+                  <img
+                    src="./images/05_Today's Picks/card-item-7.jpg"
+                    alt="post"
+                  />
+
+                  <div class="picks__post--rate">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+                </div>
+
+                <div class="picks__post--title">
+                  <a href="#">
+                    <h3>"Living Vase 01 By Lanz...</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="picks__post--content">
+                  <div class="post--content__left">
+                    <div class="content--left__avatar">
+                      <img
+                        src="./images/05_Today's Picks/avt-4.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content--left__about">
+                      <h6>Owned by</h6>
+                      <h5>Tyler Covington</h5>
+                    </div>
+                  </div>
+                  <div class="post--content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+
+                <div class="picks__post--footer">
+                  <button class="btn btn__fourthly">
+                    <i class="fa-solid fa-bag-shopping"></i> Place Bid
+                  </button>
+                  <h5>
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    View Story
+                  </h5>
+                </div>
+              </div>
+
+              <div class="picks__post post8">
+                <div class="picks__post--image">
+                  <img
+                    src="./images/05_Today's Picks/card-item-5.jpg"
+                    alt="post"
+                  />
+
+                  <div class="picks__post--rate">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+                </div>
+
+                <div class="picks__post--title">
+                  <a href="#">
+                    <h3>"Travel Monkey Club #45"</h3>
+                  </a>
+                  <button class="btn btn__bsc">BSC</button>
+                </div>
+
+                <div class="picks__post--content">
+                  <div class="post--content__left">
+                    <div class="content--left__avatar">
+                      <img
+                        src="./images/05_Today's Picks/avt-5.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+
+                    <div class="content--left__about">
+                      <h6>Owned by</h6>
+                      <h5>Ralph Garraway</h5>
+                    </div>
+                  </div>
+                  <div class="post--content__right">
+                    <h6>Current Bid</h6>
+                    <h4>4.89 ETH</h4>
+                  </div>
+                </div>
+
+                <div class="picks__post--footer">
+                  <button class="btn btn__fourthly">
+                    <i class="fa-solid fa-bag-shopping"></i> Place Bid
+                  </button>
+                  <h5>
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    View Story
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="picks__load-more">
+              <button class="btn btn__thirdly">Load More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------- Popular Collection ---------------------------- -->
+      <section id="collection">
+        <div class="container">
+          <div class="collection__wrapper">
+            <div class="collection__header">
+              <h3>Popular Collection</h3>
+              <a href="#" class="explore border__gradient"
+                ><h5>EXPLORE MORE</h5></a
+              >
+            </div>
+
+            <div class="collection__posts">
+              <div class="collection__post post1">
+                <div class="collection__post--title">
+                  <div class="post--title__info">
+                    <div class="title__info--left">
+                      <img
+                        src="./images/06_Popular Collection/box1/avt-1 (1).jpg"
+                        alt="avatar"
+                      />
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <div class="title__info--right">
+                      <h4>Creation Art Collection</h4>
+                      <h5>
+                        <span class="info--right__title">Created By</span>
+                        <span class="info--right__name">Ralph Garraway</span>
+                      </h5>
+                    </div>
+                  </div>
+
+                  <div class="post--title__rating">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+                </div>
+
+                <div class="collection__post--content">
+                  <img
+                    src="./images/06_Popular Collection/post1.jpg"
+                    alt="picture"
+                  />
+                </div>
+              </div>
+
+              <div class="collection__post post2">
+                <div class="collection__post--title">
+                  <div class="post--title__info">
+                    <div class="title__info--left">
+                      <img
+                        src="./images/06_Popular Collection/box2/avt-8.jpg"
+                        alt="avatar"
+                      />
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <div class="title__info--right">
+                      <h4>Colorful Abstract</h4>
+                      <h5>
+                        <span class="info--right__title">Created By</span>
+                        <span class="info--right__name">Mason Woodward</span>
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="post--title__rating">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+                </div>
+
+                <div class="collection__post--content">
+                  <img
+                    src="./images/06_Popular Collection/post2.jpg"
+                    alt="picture"
+                  />
+                </div>
+              </div>
+
+              <div class="collection__post post3">
+                <div class="collection__post--title">
+                  <div class="post--title__info">
+                    <div class="title__info--left">
+                      <img
+                        src="./images/06_Popular Collection/box3/avt-3.jpg"
+                        alt="avatar"
+                      />
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <div class="title__info--right">
+                      <h4>Modern Art Collection</h4>
+                      <h5>
+                        <span class="info--right__title">Created By</span>
+                        <span class="info--right__name">Freddie Carpenter</span>
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="post--title__rating">
+                    <i class="fa-solid fa-heart"></i> 100
+                  </div>
+                </div>
+
+                <div class="collection__post--content">
+                  <img
+                    src="./images/06_Popular Collection/post3.jpg"
+                    alt="picture"
                   />
                 </div>
               </div>
             </div>
-
-            <div class="shapes item-w-16"></div>
-            <div class="shapes item-w-22"></div>
-            <div class="shapes item-w-32"></div>
-            <div class="shapes item-w-48"></div>
-            <div class="item-w-51 position1">
-              <div class="outer">
-                <div class="inner"></div>
-              </div>
-            </div>
-            <div class="item-w-51 position2">
-              <div class="outer">
-                <div class="inner"></div>
-              </div>
-            </div>
-            <div class="shapes item-w-68"></div>
           </div>
         </div>
-        <div class="hero__bg bg1">
-          <img src="images/02_hero/bg-gradient1.png" alt="background" />
-        </div>
+      </section>
 
-        <div class="hero__bg bg2">
-          <img src="images/02_hero/bg-gradient2.png" alt="background" />
-        </div>
+      <!-------------------------------- NFTs -------------------------------->
+      <section id="nfts">
+        <div class="container">
+          <div class="nfts__wrapper">
+            <div class="nfts__header">
+              <h2>Create And Sell Your NFTs</h2>
+            </div>
+            <div class="nfts__content">
+              <div class="your-wallet">
+                <i class="fa-solid fa-wallet"></i>
+                <h3>Set Up Your Wallet</h3>
+                <p>
+                  Wallet that is functional for NFT purchasing. You may have a
+                  Coinbase account at this point, but very few are actually set
+                  up to buy an NFT.
+                </p>
+              </div>
 
-        <div class="hero__bg bg3">
-          <img src="images/02_hero/bg-gradient3.png" alt="background" />
+              <div class="creat-collection">
+                <i class="fa-solid fa-layer-group"></i>
+                <h3>Creat Your Collection</h3>
+                <p>
+                  Setting up your NFT collection and creating NFTs on NFTs is
+                  easy! This guide explains how to set up your first collection
+                </p>
+              </div>
+
+              <div class="add-nfts">
+                <i class="fa-solid fa-image"></i>
+                <h3>Add Your NFTs</h3>
+                <p>
+                  Sed ut perspiciatis un de omnis iste natus error sit
+                  voluptatem accusantium doloremque laudantium, totam rem.
+                </p>
+              </div>
+
+              <div class="list-theme">
+                <i class="fa-solid fa-bookmark"></i>
+                <h3>List Them For Sale</h3>
+                <p>
+                  Choose between auctions, fixed-price listings, and
+                  declining-price listings. You choose how you want to sell your
+                  NFTs!
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
+    <!-------------------------------- Footer -------------------------------->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__about-site">
+            <img src="./images/01_header/logo_dark.png" alt="Axies" />
+            <p>
+              Lorem ipsum dolor sit amet,consectetur<br />
+              adipisicing elit. Quis non, fugit totam vel<br />
+              laboriosam vitae.
+            </p>
+          </div>
+
+          <div class="footer__my-account">
+            <h4>My Account</h4>
+            <ul class="lists">
+              <li class="list">
+                <a href="#" class="link">Authors</a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="link">Collection</a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="link">Author Profile</a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="link">Create Item</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__resources">
+            <h4>Resources</h4>
+
+            <ul class="lists">
+              <li class="list">
+                <a href="#" class="link">Help & Support</a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="link">Live Auctions</a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="link">Item Details</a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="link">Activity</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__company">
+            <h4>Company</h4>
+
+            <ul class="lists">
+              <li class="list">
+                <a href="#" class="link">Explore</a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="link">Contact Us</a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="link">Our Blog</a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__subscribe">
+            <h4>Subscribe Us</h4>
+
+            <div class="input">
+              <form action="#">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="info@yourgmail.com"
+                  autocomplete="off"
+                />
+                <button>
+                  <i class="fa-solid fa-angles-right"></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="social">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fab fa-telegram-plane"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-tiktok"></i>
+              <i class="fa-brands fa-discord"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>

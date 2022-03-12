@@ -1,0 +1,121 @@
+#footer {
+  background-color: var(--footer-dark-color);
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.3fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  grid-template-areas: "footer__about-site footer__my-account footer__resources footer__company footer__subscribe";
+
+  padding: 10rem 0;
+}
+
+#footer h4 {
+  font-size: var(--font-size-md);
+  margin-bottom: 2rem;
+}
+
+#footer .list {
+  margin-bottom: 2rem;
+}
+
+#footer .link {
+  font-size: var(--font-size-xs2);
+  color: var(--light-color);
+  display: inline-block;
+  transition: all 0.4s ease-out;
+}
+
+#footer .link:hover {
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+/*--------------------------- About Site -------------------------*/
+.footer__about-site {
+  grid-area: footer__about-site;
+}
+
+.footer__about-site p {
+  font-size: var(--font-size-xs2);
+}
+/*--------------------------- My Account -------------------------*/
+.footer__my-account {
+  grid-area: footer__my-account;
+}
+
+/*--------------------------- Resourcess -------------------------*/
+.footer__resources {
+  grid-area: footer__resources;
+}
+
+/*--------------------------- Company -------------------------*/
+.footer__company {
+  grid-area: footer__company;
+}
+
+/*--------------------------- Subscribe -------------------------*/
+.footer__subscribe {
+  grid-area: footer__subscribe;
+
+  justify-self: start;
+}
+
+.input {
+  border: 0.1rem solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  background-color: transparent;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.input input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0rem 3rem;
+  color: var(--light-color);
+  font-size: var(--font-size-xs2);
+}
+
+.input button {
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--light-color);
+  width: 5rem;
+  height: 5rem;
+  border-top-right-radius: var(--border-radius-lg);
+  border-bottom-right-radius: var(--border-radius-lg);
+  /* border-right: 0.2rem solid var(--accent-color); */
+  transition: all 0.3s ease-in-out;
+}
+
+.input button:hover {
+  background-color: #5f51f7;
+}
+
+.input button i {
+  font-size: var(--font-size-md);
+}
+
+.social {
+  font-size: var(--font-size-md);
+  margin-top: 2rem;
+}
+
+.social i {
+  width: 4rem;
+  border-radius: var(--border-radius-sm);
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.social i:hover {
+  background-color: var(--accent-color);
+}
