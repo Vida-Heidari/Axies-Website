@@ -217,6 +217,10 @@ table {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
+
+.light__mode .btn__fourthly:hover i {
+  color: var(--white-color);
+}
 /* ------------------------------ Border Gradient ------------------------------ */
 .border__gradient {
   width: 12.5rem;
