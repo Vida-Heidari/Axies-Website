@@ -34,7 +34,7 @@ function myDarkFunction() {
 }
 
 //---------------------------- Search Button ------------------------------
-document.getElementById("search__btn").addEventListener("click", function () {
+document.querySelector(".search-icon").addEventListener("click", function () {
   const searchButton = document.querySelector(".navbar__search-icon");
   searchButton.classList.toggle("navbar__search-icon--open");
 
