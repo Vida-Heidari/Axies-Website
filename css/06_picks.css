@@ -60,6 +60,11 @@
   }
 }
 
+.light__mode .picks__header h5:hover {
+  background-image: linear-gradient(60deg, #674fe5, #df50e5);
+  -webkit-text-stroke: 0.1rem transparent;
+}
+
 /* ------------------------------ Picks buttons------------------------------ */
 .picks__buttons {
   grid-area: picks__buttons;
@@ -122,6 +127,12 @@
 
 .picks__post:hover {
   transform: translateY(-1rem);
+}
+
+.light__mode .picks__post {
+  background-color: var(--withe-color);
+  box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(128, 128, 128, 0.097);
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(128, 128, 128, 0.097);
 }
 
 .picks__post h3,
@@ -195,6 +206,10 @@
   font-size: var(--font-size-xs);
   font-weight: 700;
   cursor: pointer;
+}
+
+.light__mode .picks__post--rate {
+  color: var(--white-color);
 }
 
 .picks__post--title {

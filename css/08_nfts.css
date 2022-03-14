@@ -32,6 +32,8 @@
   grid-template-rows: 1fr;
   gap: 2rem;
   grid-template-areas: "your-wallet creat-collection add-nfts list-theme";
+
+  text-align: center;
 }
 
 .your-wallet {
@@ -70,6 +72,10 @@
   animation: rotateY-rev 0.8s forwards;
 }
 
+.light__mode .nfts__content i {
+  color: var(--white-color);
+}
+
 .nfts__content div:hover i {
   animation: rotateY 0.8s forwards;
 }
@@ -98,7 +104,7 @@
 }
 
 .nfts__content h3 {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-lg);
   font-weight: 700;
   color: var(--white-color);
   margin-bottom: 1rem;
@@ -106,12 +112,21 @@
   transition: all 0.3s ease-in-out;
 }
 
+.light__mode .nfts__content h3 {
+  color: var(--dark-color);
+}
+
 .nfts__content h3:hover {
   color: var(--accent-color);
 }
 
 .nfts__content p {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xs2);
   font-weight: 300;
   color: var(--white-color);
+}
+
+.light__mode .nfts__content p {
+  color: var(--dark-color);
+  /* opacity: 0.8; */
 }

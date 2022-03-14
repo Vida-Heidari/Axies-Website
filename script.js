@@ -20,12 +20,24 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-//---------------------------- menu ------------------------------
-function myFunction() {
-  let myNav = document.getElementById("myTopnav");
-  if (myNav.className === "navbar__nav") {
-    myNav.className += "navbar__nav";
-  } else {
-    myNav.className = "navbar__nav";
-  }
+//---------------------------- Mode ------------------------------
+function myLightFunction() {
+  const elementLight = document.body;
+  elementLight.classList.remove("dark__mode");
+  elementLight.classList.add("light__mode");
 }
+
+function myDarkFunction() {
+  const elementDark = document.body;
+  elementDark.classList.remove("light__mode");
+  elementDark.classList.add("dark__mode");
+}
+
+//---------------------------- Search Button ------------------------------
+document.getElementById("search__btn").addEventListener("click", function () {
+  const searchButton = document.querySelector(".navbar__search-icon");
+  searchButton.classList.toggle("navbar__search-icon--open");
+
+  const searchActive = document.querySelector(".search-btn");
+  searchActive.classList.toggle("search-btn--active");
+});

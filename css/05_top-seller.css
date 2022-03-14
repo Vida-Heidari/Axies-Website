@@ -29,6 +29,14 @@
   font-size: var(--font-size-xl);
 }
 
+.light__mode .seller__info h4 {
+  color: var(--dark-color);
+}
+
+.light__mode .seller__info h4:hover {
+  color: var(--accent-color);
+}
+
 .sellers__icons i {
   width: 4rem;
   height: 4rem;
@@ -42,10 +50,21 @@
   transition: all 0.3s ease-in-out;
 }
 
+.light__mode .sellers__icons i {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
 .sellers__icons i:hover {
   background-color: var(--light-color);
   color: var(--accent-color);
   border-color: var(--light-color);
+}
+
+.light__mode .sellers__icons i:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* ------------------------------ Sellers About ------------------------------ */
@@ -95,7 +114,7 @@
   align-items: center;
 
   cursor: grab;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .seller:hover {
