@@ -3,7 +3,7 @@
 }
 
 .light__mode #footer {
-  background-color: var(--light-color);
+  background-color: var(--dark-color);
 }
 
 .footer__wrapper {
@@ -22,6 +22,11 @@
   margin-bottom: 2rem;
 }
 
+.light__mode #footer h4,
+.light__mode #footer p {
+  color: var(--light-color);
+}
+
 #footer .list {
   margin-bottom: 2rem;
 }
@@ -38,23 +43,23 @@
   border-bottom: 1px solid var(--accent-color);
 }
 
-.light__mode #footer .link {
+/* .light__mode #footer .link {
   color: var(--dark-color);
 }
 
 .light__mode #footer .link:hover {
   color: var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
-}
+} */
 
 /*--------------------------- About Site -------------------------*/
 .footer__about-site {
   grid-area: footer__about-site;
 }
 
-.light__mode .footer__about-site {
+/* .light__mode .footer__about-site {
   color: var(--dark-color);
-}
+} */
 
 .footer__about-site p {
   font-size: var(--font-size-xs2);
@@ -98,9 +103,9 @@
   font-size: var(--font-size-xs2);
 }
 
-.light__mode .input input {
+/* .light__mode .input input {
   color: var(--dark-color);
-}
+} */
 
 .input button {
   background-color: var(--accent-color);

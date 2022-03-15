@@ -135,9 +135,9 @@ table {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
 }
-/*--------------------- Primary------------------*/
+/*--------------------------------- Primary ---------------------------------*/
 .btn__primary {
-  font-size: var(--font-size-xs2);
+  font-size: var(--font-size-xs);
   box-shadow: inset 0 0 0 0.2rem var(--accent-color);
 }
 
@@ -151,7 +151,7 @@ table {
   box-shadow: inset 0 0 0 0.2rem var(--light-color);
 }
 
-/*--------------------- Secondary------------------*/
+/*--------------------------------- Secondary ---------------------------------*/
 .btn__secondary {
   font-size: var(--font-size-xs2);
   box-shadow: inset 0 0 0 0.1rem var(--border-color);
@@ -169,7 +169,7 @@ table {
   background-color: var(--accent-color);
 }
 
-/*--------------------- Thirdly------------------*/
+/*--------------------------------- Thirdly-----------------------------*/
 .btn__thirdly {
   box-shadow: inset 0 0 0 0.2rem var(--white-color);
   font-size: var(--font-size-xs2);
