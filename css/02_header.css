@@ -9,6 +9,9 @@
   top: 0;
   transition: all 0.1s linear;
   z-index: 10;
+  max-width: 100%;
+  padding-left: 7rem;
+  margin-top: 2rem;
 }
 
 .light__mode #header {
@@ -34,6 +37,9 @@
   grid-area: header__navbar;
 }
 
+.top-menu__small-btn {
+  display: none;
+}
 /*----------------------------------------------------------------*/
 .header__navbar {
   display: grid;
@@ -85,6 +91,10 @@
   padding: 1rem;
   font-size: var(--font-size-xs2);
   font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .nav__submenu {
@@ -153,9 +163,9 @@
 
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 2fr 1.5fr;
+  grid-template-columns: 0.5fr 2fr 1fr;
   grid-template-rows: 1fr;
-  gap: 3rem;
+  gap: 1rem;
   grid-template-areas: "navbar--left__search navbar--left__wallet navbar--left__mode";
 
   justify-content: start;
@@ -170,6 +180,12 @@
 }
 .navbar--left__mode {
   grid-area: navbar--left__mode;
+}
+
+.wallet__btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* ----------------------- Search ---------------------- */
@@ -273,3 +289,47 @@
 .mode:focus {
   opacity: 0.7;
 }
+
+/*------------------------------------------ Media Query -----------------------------------*/
+/* @media screen and (max-width: 1300px) {
+  .navbar--left__wallet .wallet__content {
+    display: none;
+  }
+
+  .navbar--left__wallet .wallet__btn {
+    padding: 1.5rem 1.9rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+}
+
+.header__navbar--right {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.2fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  grid-template-areas: "navbar--left__search navbar--left__wallet navbar--left__mode";
+
+  justify-content: start;
+  align-items: center;
+}
+
+.navbar--left__search {
+  grid-area: navbar--left__search;
+  justify-self: end;
+}
+.navbar--left__wallet {
+  grid-area: navbar--left__wallet;
+  justify-self: end;
+}
+.navbar--left__mode {
+  grid-area: navbar--left__mode;
+} */
+
+/* @media screen and (max-width: 1100px) {
+  .top-menu__small-btn {
+    display: block;
+  }
+} */

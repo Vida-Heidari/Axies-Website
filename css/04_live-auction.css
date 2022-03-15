@@ -145,6 +145,7 @@
 
 .post__image {
   position: relative;
+  padding: 0 2rem;
 }
 
 .post__image img {
@@ -235,6 +236,7 @@
   align-items: center;
 
   margin: 2rem 0;
+  padding: 0 3rem;
 }
 
 .btn__bsc {
@@ -252,6 +254,7 @@
 
   line-height: 1.5;
   margin-bottom: 2rem;
+  padding: 0 2rem;
 }
 
 .content__left {
