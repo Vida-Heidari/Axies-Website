@@ -71,15 +71,20 @@
 .sellers__about {
   grid-area: sellers__about;
 
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  /* display: grid; 
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 20px;
-  grid-template-areas: "seller1 seller2 seller3 seller4 seller5 seller6 seller7 seller8 seller9";
+  grid-template-areas: "seller1 seller2 seller3 seller4 seller5 seller6 seller7 seller8 seller9";*/
 }
 
-.seller1 {
+/* .seller1 {
   grid-area: seller1;
 }
 .seller2 {
@@ -105,16 +110,19 @@
 }
 .seller9 {
   grid-area: seller9;
-}
+} */
 
 .seller {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   cursor: grab;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
+
+  margin: 0 1rem;
 }
 
 .seller:hover {
@@ -151,4 +159,20 @@
 
 .seller__name:hover {
   color: var(--accent-color);
+}
+
+.seller__info h4 {
+  font-size: var(--font-size-xs2);
+  font-weight: 500;
+}
+
+.seller__info h5 {
+  font-size: var(--font-size-xs);
+  opacity: 0.7;
+}
+
+/*------------------------- Media Queries -------------------------*/
+@media screen and (max-width: 1600px) {
+  .sellers__about {
+  }
 }

@@ -104,10 +104,10 @@
 }
 
 .nfts__content h3 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   font-weight: 700;
   color: var(--white-color);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -121,9 +121,9 @@
 }
 
 .nfts__content p {
-  font-size: var(--font-size-xs2);
+  font-size: var(--font-size-xs);
   font-weight: 300;
-  color: var(--white-color);
+  color: var(--light-color);
 }
 
 .light__mode .nfts__content p {

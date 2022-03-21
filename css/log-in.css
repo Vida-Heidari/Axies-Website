@@ -1,0 +1,243 @@
+#sign-in {
+  background-color: var(--dark-color);
+}
+
+.home {
+  display: flex;
+  justify-content: flex-end;
+  height: 5vh;
+  padding: 1rem;
+}
+
+.go-home__hover {
+  visibility: hidden;
+  opacity: 0;
+  font-size: var(--font-size-xs);
+  vertical-align: middle;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.go-home__hover i {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.home a:hover + .go-home__hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sign-in__wrapper {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0rem 0rem;
+  grid-template-areas: "sign-in__left-item sign-in__right-item";
+  height: 95vh;
+
+  text-align: center;
+  align-items: center;
+  background-color: #292f45;
+}
+
+/*------------------------------------- Left Item ----------------------------------*/
+
+.sign-in__left-item {
+  grid-area: sign-in__left-item;
+
+  background-color: #161d30;
+  height: 95vh;
+  align-self: center;
+}
+
+.sign-in__left-item img {
+  height: 80vh;
+}
+
+/*------------------------------------- right Item ----------------------------------*/
+.sign-in__right-item {
+  grid-area: sign-in__right-item;
+  background-color: #292f45;
+  padding: 0 5rem;
+  /* margin-top: 5rem; */
+}
+
+.sign-in__right-item h1 {
+  font-family: inherit;
+  font-size: var(--font-size-2xl);
+  margin-bottom: 5rem;
+}
+
+.user-box {
+  position: relative;
+}
+
+.user-box input {
+  width: 100%;
+  background-color: transparent;
+  color: var(--light-color);
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  border: none;
+  border-bottom: 0.1rem solid var(--border-color);
+  outline: none;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: inherit;
+  font-size: var(--font-size-xs2);
+  color: var(--light-color);
+  pointer-events: none; /*so we can click here and type something*/
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+  margin: 2rem 0;
+}
+
+.user-box input:focus ~ label,
+input:valid ~ label {
+  top: -3rem; /* move up */
+  left: 0;
+  color: var(--accent-color);
+  font-size: var(--font-size-xs);
+}
+
+form #submit {
+  position: relative;
+  display: block;
+  padding: 1rem 2rem;
+  color: var(--light-color);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0;
+  height: 5rem;
+  width: 100%;
+  border-radius: var(--border-radius-2xl);
+  background: linear-gradient(
+    45deg,
+    var(--primary-color) 0%,
+    var(--accent-color) 81%
+  );
+  border: none;
+  transition: all 1s ease-in-out;
+}
+
+form #submit:hover {
+  background: linear-gradient(
+    -45deg,
+    var(--primary-color) 0%,
+    var(--accent-color) 81%
+  );
+}
+
+.sign-in__right-item p {
+  margin: 3rem 0;
+  font-family: inherit;
+  font-size: var(--font-size-sm);
+}
+
+.sign-in__right-item .primary-color {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sign-in__right-item .primary-color:hover {
+  color: var(--accent-color);
+}
+
+/* --------------------------- OR---------------------------------*/
+.or {
+  position: relative;
+  margin: 4rem 0;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  display: block;
+  width: 30rem;
+  height: 0.1rem;
+  background: var(--border-color);
+  top: 50%;
+  position: absolute;
+}
+
+.or::before {
+  left: 0;
+}
+
+.or::after {
+  right: 0;
+}
+
+/* --------------------------- Social Media ---------------------------------*/
+.sin-in__social {
+  font-size: var(--font-size-md);
+  margin-top: 2rem;
+}
+
+.sin-in__social i {
+  width: 4rem;
+  border-radius: var(--border-radius-sm);
+  padding: 1rem;
+  margin: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sin-in__social i:hover {
+  opacity: 0.8;
+  transform: translateY(-0.3rem);
+}
+
+.sin-in__social .fa-facebook {
+  background-color: #3c5a98;
+}
+
+.fa-twitter {
+  background-color: #4ea9ef;
+}
+
+.fa-envelope {
+  background-color: #d35139;
+}
+
+.fa-github {
+  background-color: #464749;
+}
+
+/* --------------------------- Media Queries---------------------------------*/
+@media screen and (max-width: 1899px) and (min-width: 1600px) {
+  .or::before,
+  .or::after {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1350px) {
+  .or::before,
+  .or::after {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 1349px) and (min-width: 1115px) {
+  .or::before,
+  .or::after {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 1114px) and (min-width: 1000px) {
+  .or::before,
+  .or::after {
+    width: 9rem;
+  }
+}

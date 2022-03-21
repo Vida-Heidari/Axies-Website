@@ -31,7 +31,8 @@
   --border-radius-3xl: 3rem;
   --border-radius-4xl: 4rem;
 
-  --font-size-3xs: 0.5rem;
+  --font-size-4xs: 0.5rem;
+  --font-size-3xs: 0.75rem;
   --font-size-2xs: 1rem;
   --font-size-xs: 1.25rem;
   --font-size-xs2: 1.5rem;
@@ -109,9 +110,10 @@ table {
 }
 
 .container {
-  max-width: 90vw;
+  /* max-width: 90vw; */
+  width: 100%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 10rem;
 }
 
 .flex {

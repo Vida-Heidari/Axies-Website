@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/01_utilities.css" />
+    <link rel="stylesheet" href="css/log-in.css" />
+    <title>Log In</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="sign-in">
+      <header class="log-in__header">
+        <div class="home">
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <p class="go-home__hover">
+            <i class="fa-solid fa-caret-left"></i>
+            Go Home
+          </p>
+        </div>
+      </header>
+      <div class="sign-in__wrapper">
+        <div class="sign-in__left-item">
+          <img src="images/07_log-in/sign-in1.png" alt="" />
+        </div>
+        <div class="sign-in__right-item">
+          <h1>Log In</h1>
+          <form action="#">
+            <div class="user-box">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="off"
+                required
+              />
+              <label for="email">Email Adrress</label>
+            </div>
+
+            <div class="user-box">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="off"
+                required
+              />
+              <label for="password">Pasword</label>
+            </div>
+
+            <button type="submit" id="submit">Log in</button>
+            <p>
+              New on our platform?
+              <span class="primary-color">Creat an acount</span>
+            </p>
+            <div class="or">or</div>
+            <div class="sin-in__social">
+              <i class="fa-brands fa-facebook" title="Facebook"></i>
+              <i class="fa-brands fa-twitter" title="Twitter"></i>
+              <i class="fa-solid fa-envelope" title="Email"></i>
+              <i class="fa-brands fa-github" title="GitHub"></i>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

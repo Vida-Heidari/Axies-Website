@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/07_collection.css" />
     <link rel="stylesheet" href="css/08_nfts.css" />
     <link rel="stylesheet" href="css/09_footer.css" />
-    <!-- <link rel="stylesheet" href="css/10_responsive.css" /> -->
+    <link rel="stylesheet" href="css/10_vertical-social.css" />
     <title>Axies</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
   </head>
@@ -30,15 +30,36 @@
     <button onclick="topFunction()" id="myBtn">
       <i class="fa-solid fa-chevron-up"></i>
     </button>
+
+    <!-------------------------------- Vertical Social -------------------------------->
+    <div class="vertical-social">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fab fa-telegram-plane"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-tiktok"></i>
+      <i class="fa-brands fa-discord"></i>
+      <a href="log-in.html">
+        <i class="fa-solid fa-arrow-right-to-bracket" title="Log In"></i>
+      </a>
+    </div>
     <!-------------------------------- Header -------------------------------->
     <header id="header">
-      <div class="header__wrapper">
+      <div class="container header__wrapper">
         <div class="header__logo">
           <img src="./images/01_header/logo_dark.png" alt="Axies" />
         </div>
 
+        <button id="nav-btn" class="nav-btn open-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+
         <div class="header__navbar">
           <div class="header__navbar--left">
+            <button id="nav__close-btn" class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+
             <div class="navbar--left__nav">
               <ul class="nav__menu">
                 <li class="nav__item">
@@ -260,7 +281,7 @@
                     </li>
 
                     <li class="nav__subitem">
-                      <a href="#" class="nav__link">
+                      <a href="log-in.html" class="nav__link">
                         <span class="hyphen">-</span> Login
                       </a>
                     </li>
@@ -321,6 +342,7 @@
                     id="search"
                     placeholder="Search..."
                     title="search for"
+                    autocomplete="off"
                   />
                   <label for="search">
                     <i
@@ -1518,7 +1540,7 @@
             <h4>Subscribe Us</h4>
 
             <div class="input">
-              <form action="#">
+              <form action="#" class="input__form">
                 <input
                   type="email"
                   name="email"

@@ -94,7 +94,18 @@
   margin-bottom: 1rem;
 }
 
+.input__form {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0.5rem 0.5rem;
+  grid-template-areas: "input button";
+}
+
 .input input {
+  grid-area: input;
+
   background-color: transparent;
   border: none;
   outline: none;
@@ -103,11 +114,10 @@
   font-size: var(--font-size-xs2);
 }
 
-/* .light__mode .input input {
-  color: var(--dark-color);
-} */
-
 .input button {
+  grid-area: button;
+  justify-self: end;
+
   background-color: var(--accent-color);
   border: none;
   color: var(--light-color);
@@ -115,7 +125,6 @@
   height: 5rem;
   border-top-right-radius: var(--border-radius-lg);
   border-bottom-right-radius: var(--border-radius-lg);
-  /* border-right: 0.2rem solid var(--accent-color); */
   transition: all 0.3s ease-in-out;
 }
 
