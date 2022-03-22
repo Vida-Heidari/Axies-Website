@@ -1,73 +1,77 @@
-#sign-in {
-  background-color: var(--dark-color);
+#wrapper {
+  background: url("../images/07_log-in/bg.jpg");
+  padding-bottom: 2rem;
 }
 
-.home {
+#header {
+  background: transparent;
+}
+
+.light__mode #header {
+  background: transparent;
+}
+
+.search-icon {
+  color: #fff;
+}
+
+#home-login {
   display: flex;
-  justify-content: flex-end;
-  height: 5vh;
-  padding: 1rem;
-}
-
-.go-home__hover {
-  visibility: hidden;
-  opacity: 0;
-  font-size: var(--font-size-xs);
-  vertical-align: middle;
-  padding: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.go-home__hover i {
-  margin-left: 0.5rem;
-  vertical-align: middle;
-}
-
-.home a:hover + .go-home__hover {
-  visibility: visible;
-  opacity: 1;
-}
-
-.sign-in__wrapper {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0rem 0rem;
-  grid-template-areas: "sign-in__left-item sign-in__right-item";
-  height: 95vh;
-
-  text-align: center;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #292f45;
+  margin: 4rem 0;
 }
 
-/*------------------------------------- Left Item ----------------------------------*/
-
-.sign-in__left-item {
-  grid-area: sign-in__left-item;
-
-  background-color: #161d30;
-  height: 95vh;
-  align-self: center;
+.login__title {
+  margin-bottom: 2rem;
+  font-size: var(--font-size-lg);
+  color: var(--light-color);
 }
 
-.sign-in__left-item img {
-  height: 80vh;
+.login__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--light-color);
 }
 
-/*------------------------------------- right Item ----------------------------------*/
-.sign-in__right-item {
-  grid-area: sign-in__right-item;
-  background-color: #292f45;
-  padding: 0 5rem;
-  /* margin-top: 5rem; */
+.login__content a {
+  margin: 0 2rem;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  color: var(--border-color);
+  transition: all 0.3s ease-in-out;
 }
 
-.sign-in__right-item h1 {
-  font-family: inherit;
-  font-size: var(--font-size-2xl);
-  margin-bottom: 5rem;
+.login__content a:hover {
+  color: var(--light-color);
+}
+
+.login__content .active {
+  color: var(--light-color);
+}
+
+/*------------------------------------- log in button ----------------------------------*/
+#login {
+  background-color: var(--dark-color);
+  text-align: center;
+  padding: 10rem 5rem;
+  /* margin-top: 10rem; */
+  height: 70vh;
+}
+
+.light__mode #login {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.login__wrapper {
+  width: 40%;
+  margin: 0 auto;
 }
 
 .user-box {
@@ -85,6 +89,10 @@
   outline: none;
 }
 
+.light__mode .user-box input {
+  color: var(--dark-color);
+}
+
 .user-box label {
   position: absolute;
   top: 0;
@@ -97,6 +105,10 @@
   transition: all 0.5s ease-in-out;
   display: inline-block;
   margin: 2rem 0;
+}
+
+.light__mode .user-box label {
+  color: var(--dark-color);
 }
 
 .user-box input:focus ~ label,
@@ -136,19 +148,19 @@ form #submit:hover {
   );
 }
 
-.sign-in__right-item p {
+.login__wrapper p {
   margin: 3rem 0;
   font-family: inherit;
   font-size: var(--font-size-sm);
 }
 
-.sign-in__right-item .primary-color {
+.login__wrapper .primary-color {
   color: var(--primary-color);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.sign-in__right-item .primary-color:hover {
+.login__wrapper .primary-color:hover {
   color: var(--accent-color);
 }
 
@@ -178,12 +190,12 @@ form #submit:hover {
 }
 
 /* --------------------------- Social Media ---------------------------------*/
-.sin-in__social {
+.login__social {
   font-size: var(--font-size-md);
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
-.sin-in__social i {
+.login__social i {
   width: 4rem;
   border-radius: var(--border-radius-sm);
   background-color: var(--border-color);
@@ -193,8 +205,22 @@ form #submit:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.sin-in__social i:hover {
+.light__mode .login__social i {
+  background-color: var(--light-color);
+  box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(128, 128, 128, 0.097);
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(128, 128, 128, 0.097);
+  color: var(--accent-color);
+}
+
+.login__social i:hover {
   background-color: var(--accent-color);
+}
+
+.light__mode .login__social i:hover {
+  color: #1b08e6;
+  background-color: var(--light-color);
+  box-shadow: 0.5rem 0.5rem 1rem 0.5rem #c8c6dd79;
+  /* -webkit-box-shadow: 0.5rem 0.5rem 1rem 0.5rem #c8c6dd; */
 }
 
 /* --------------------------- Media Queries---------------------------------*/
