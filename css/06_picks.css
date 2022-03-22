@@ -222,7 +222,7 @@
   cursor: pointer;
 }
 
-.picks__post--rate:hover i {
+.picks__post--rate i:hover {
   color: red;
 }
 

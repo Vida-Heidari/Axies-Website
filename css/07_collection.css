@@ -184,7 +184,7 @@
   cursor: pointer;
 }
 
-.post--title__rating:hover i {
+.post--title__rating i:hover {
   color: red;
 }
 
