@@ -182,7 +182,7 @@
   cursor: pointer;
 }
 
-.post__rate:hover i {
+.post__rate i:hover {
   color: red;
 }
 

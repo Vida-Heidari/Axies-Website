@@ -186,6 +186,7 @@ form #submit:hover {
 .sin-in__social i {
   width: 4rem;
   border-radius: var(--border-radius-sm);
+  background-color: var(--border-color);
   padding: 1rem;
   margin: 0.4rem;
   cursor: pointer;
@@ -193,24 +194,7 @@ form #submit:hover {
 }
 
 .sin-in__social i:hover {
-  opacity: 0.8;
-  transform: translateY(-0.3rem);
-}
-
-.sin-in__social .fa-facebook {
-  background-color: #3c5a98;
-}
-
-.fa-twitter {
-  background-color: #4ea9ef;
-}
-
-.fa-envelope {
-  background-color: #d35139;
-}
-
-.fa-github {
-  background-color: #464749;
+  background-color: var(--accent-color);
 }
 
 /* --------------------------- Media Queries---------------------------------*/

@@ -1,5 +1,4 @@
 #header {
-  padding: 0;
   margin: 0;
   min-height: 10vh;
   border-bottom: 0.1rem solid var(--border-color);
@@ -63,6 +62,7 @@
   transition: all 0.8s ease;
   overflow-x: hidden;
   background-color: var(--light-color);
+  color: var(--dark-color);
 }
 .header__navbar--open {
   transform: translateX(0%);
@@ -150,8 +150,7 @@
 
 .nav__subitem i {
   float: right;
-  margin-left: 1rem;
-  padding-top: 2.3rem;
+  margin-left: 10rem;
 }
 
 .nav__submenu2 {
@@ -170,6 +169,11 @@
   color: var(--accent-color);
 }
 .nav__submenu .nav__link:hover .hyphen {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav__link .active {
   visibility: visible;
   opacity: 1;
 }
@@ -220,6 +224,7 @@
   max-width: 48rem;
   max-width: 8rem;
   overflow: visible;
+  cursor: pointer;
 }
 
 .search-btn {
