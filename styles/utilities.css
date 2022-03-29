@@ -137,39 +137,9 @@ table {
     #be4cda 100%
   );
   border-image-slice: 1;
-  /* margin-bottom: 0.8rem; */
 }
 
 /* ------------------------------ Icons ------------------------------ */
 i {
   padding-right: 0.7rem;
-}
-
-/*--------------Go Top Button-----------------*/
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 99;
-  font-size: var(--font-size-sm);
-  border: none;
-  outline: none;
-  background-color: var(--light-color);
-  color: var(--accent-color);
-  cursor: pointer;
-  width: 5rem;
-  height: 5rem;
-  padding: 1.5rem 1.7rem;
-  border-radius: 50%;
-  transition: all 0.3s ease-in-out;
-}
-
-#myBtn:hover {
-  transform: translateY(-0.5rem);
-}
-
-.light__mode #myBtn {
-  background-color: var(--accent-color);
-  color: var(--light-color);
 }
