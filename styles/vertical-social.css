@@ -1,13 +1,13 @@
 .vertical-social {
   position: fixed;
   top: 50%;
-  transform: translateX(-90%) translateY(-50%);
+  transform: translate(-90%, -50%);
   left: -2rem;
   background: #0d003b;
   height: 37rem !important;
   margin-left: 3rem;
   border-radius: 4rem;
-  padding: 3rem 1.5rem;
+  padding: 2rem 1.5rem;
   z-index: 999;
   transition: 1s;
   display: -ms-flexbox;
@@ -22,23 +22,22 @@
 }
 
 .vertical-social:hover {
-  transform: translateX(0%) translateY(-50%);
+  transform: translate(0%, -50%);
 }
 
 .vertical-social i {
-  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .vertical-social i:hover {
   color: var(--primary-color);
+  animation: jingle 1s ease-in-out;
 }
 
 .light__mode .vertical-social {
   background: var(--light-color);
   box-shadow: 0rem 0.4rem 1.3rem 0 #8a208c;
   color: var(--accent-color);
-  /* border-bottom: 0.5rem solid #a843fd; */
 }
 
 .vertical-social a {
@@ -50,6 +49,16 @@
   color: var(--accent-color);
 }
 
-/* .light__mode .vertical-social i:hover {
-  color: #8a208c;
-} */
+@keyframes jingle {
+  12.5%,
+  37.5%,
+  62.5% {
+    transform: rotateZ(-7deg) translateY(-0.3rem);
+  }
+
+  25%,
+  50%,
+  75% {
+    transform: rotateZ(7deg) translateY(-0.3rem);
+  }
+}

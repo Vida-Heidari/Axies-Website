@@ -21,10 +21,10 @@
 .header__wrapper {
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 10fr;
+  grid-template-columns: 1fr 10fr 1fr;
   grid-template-rows: 1fr;
   gap: 5rem;
-  grid-template-areas: "header__logo header__navbar";
+  grid-template-areas: "header__logo header__navbar header__login";
 
   justify-content: start;
   align-items: center;
@@ -35,6 +35,9 @@
 }
 .header__navbar {
   grid-area: header__navbar;
+}
+.header__login {
+  grid-area: header__login;
 }
 
 .top-menu__small-btn {
@@ -190,12 +193,12 @@
 
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 0.5fr 2fr 1fr 1fr;
+  grid-template-columns: 0.5fr 2fr 1fr;
   grid-template-rows: 1fr;
   gap: 1rem;
-  grid-template-areas: "navbar--left__search navbar--left__wallet navbar--left__mode navbar__left--login";
+  grid-template-areas: "navbar--left__search navbar--left__wallet navbar--left__mode";
 
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 
   grid-row: 1;
@@ -209,9 +212,6 @@
 }
 .navbar--left__mode {
   grid-area: navbar--left__mode;
-}
-.navbar__left--login {
-  grid-area: navbar__left--login;
 }
 
 .wallet__btn {
@@ -252,6 +252,11 @@
 .search-icon {
   font-size: var(--font-size-sm);
   color: var(--light-color);
+  transition: all 0.3s ease;
+}
+
+.search-icon:hover {
+  color: var(--accent-color);
 }
 
 .search-bar__slider {
@@ -331,7 +336,7 @@
 }
 
 /*------------------------------------------ Log In -----------------------------------*/
-.navbar__left--login {
+.header__login {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -342,7 +347,7 @@
 
 .login-hover {
   position: absolute;
-  right: -15%;
+  right: 0%;
   color: var(--light-color);
   font-size: var(--font-size-xs);
   vertical-align: middle;
@@ -356,16 +361,17 @@
   transition: all 0.5s ease;
 }
 
-.navbar__left--login a {
+.header__login a {
+  transition: all 0.3s ease;
   padding: 0 1rem;
 }
 
-.navbar__left--login a:hover {
-  opacity: 0.7;
+.header__login a:hover {
+  color: var(--accent-color);
 }
 
-.navbar__left--login:hover > .login-hover {
-  right: -30%;
+.header__login:hover > .login-hover {
+  right: -8%;
   visibility: visible;
   opacity: 1;
 }
