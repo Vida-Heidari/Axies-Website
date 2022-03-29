@@ -103,6 +103,10 @@
   grid-template-areas: "input button";
 }
 
+.input:focus-within {
+  border: 0.1rem solid var(--accent-color);
+}
+
 .input input {
   grid-area: input;
 
@@ -129,7 +133,7 @@
 }
 
 .input button:hover {
-  background-color: #5f51f7;
+  background-color: #5242fcde;
 }
 
 .input button i {
