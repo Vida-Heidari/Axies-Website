@@ -4,15 +4,11 @@
 }
 
 #header {
-  background: transparent;
+  background-color: transparent;
 }
 
 .light__mode #header {
   background: transparent;
-}
-
-.search-icon {
-  color: #fff;
 }
 
 #home-login {
