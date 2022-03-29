@@ -1,0 +1,51 @@
+.header__wrapper {
+  grid-template-areas: "header__logo header__navbar header__home--btn";
+}
+
+.header__logo {
+  grid-area: header__logo;
+}
+.header__navbar {
+  grid-area: header__navbar;
+}
+.header__home--btn {
+  grid-area: header__home--btn;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.home__content {
+  position: absolute;
+  right: -15%;
+  color: var(--light-color);
+  font-size: var(--font-size-xs);
+  vertical-align: middle;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  background: var(--secondary-color);
+  padding: 0.5rem 1rem;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.header__home--btn a {
+  transition: all 0.3s ease;
+  padding: 0 1rem;
+}
+
+.header__home--btn a:hover {
+  color: var(--accent-color);
+}
+
+.header__home--btn:hover > .home__content {
+  right: -25%;
+  visibility: visible;
+  opacity: 1;
+}
