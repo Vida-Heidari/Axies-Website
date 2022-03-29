@@ -1,0 +1,99 @@
+.btn {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 900;
+  padding: 1.5rem 3rem;
+  border-radius: var(--border-radius-2xl);
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--white-color);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+/*--------------------------------- Primary ---------------------------------*/
+.btn__primary {
+  font-size: var(--font-size-xs);
+  box-shadow: inset 0 0 0 0.2rem var(--accent-color);
+}
+
+.btn__primary:hover {
+  background-color: var(--white-color);
+  color: var(--accent-color);
+  box-shadow: none;
+}
+
+.light__mode .btn__primary {
+  box-shadow: inset 0 0 0 0.2rem var(--light-color);
+}
+
+/*--------------------------------- Secondary ---------------------------------*/
+.btn__secondary {
+  font-size: var(--font-size-xs2);
+  box-shadow: inset 0 0 0 0.1rem var(--border-color);
+}
+
+.btn__secondary:hover {
+  box-shadow: inset 0 0 0 0.1rem var(--accent-color);
+}
+
+.light__mode .btn__secondary {
+  background-color: var(--border-color);
+}
+
+.light__mode .btn__secondary:hover {
+  background-color: var(--accent-color);
+}
+
+/*--------------------------------- Thirdly-----------------------------*/
+.btn__thirdly {
+  box-shadow: inset 0 0 0 0.2rem var(--white-color);
+  font-size: var(--font-size-xs2);
+}
+
+.btn__thirdly:hover {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  box-shadow: none;
+}
+
+.light__mode .btn__thirdly {
+  background-color: #eeecff;
+  color: var(--accent-color);
+  box-shadow: inset 0 0 0 0.2rem var(--primary-color2);
+}
+
+.light__mode .btn__thirdly:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color2);
+  box-shadow: inset 0 0 0 0.2rem var(--accent-color);
+}
+
+/*--------------------- fourthlt------------------*/
+.btn__fourthly {
+  box-shadow: inset 0 0 0 0.2rem var(--accent-color);
+  font-size: var(--font-size-xs);
+}
+
+.btn__fourthly:hover {
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+  box-shadow: none;
+}
+
+.btn__fourthly:hover i {
+  color: var(--accent-color);
+}
+
+.light__mode .btn__fourthly {
+  color: var(--accent-color);
+}
+
+.light__mode .btn__fourthly:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.light__mode .btn__fourthly:hover i {
+  color: var(--white-color);
+}
