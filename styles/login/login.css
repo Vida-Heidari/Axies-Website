@@ -205,7 +205,7 @@ form #submit:hover {
   background-color: var(--light-color);
   box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(128, 128, 128, 0.097);
   -webkit-box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(128, 128, 128, 0.097);
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .login__social i:hover {
@@ -213,10 +213,10 @@ form #submit:hover {
 }
 
 .light__mode .login__social i:hover {
-  color: #1b08e6;
+  color: var(--accent-color);
   background-color: var(--light-color);
   box-shadow: 0.5rem 0.5rem 1rem 0.5rem #c8c6dd79;
-  /* -webkit-box-shadow: 0.5rem 0.5rem 1rem 0.5rem #c8c6dd; */
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem 0.5rem #c8c6dd79;
 }
 
 /* --------------------------- Media Queries---------------------------------*/
