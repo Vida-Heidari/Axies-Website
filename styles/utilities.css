@@ -52,7 +52,8 @@ html {
 }
 
 body {
-  font-size: var(--font-size-sm);
+  /* font-size: var(--font-size-sm); */
+  font-size: clamp(0.8rem, 5vw, 1.5rem);
   background: var(--dark-color);
   color: var(--white-color);
 }
@@ -142,4 +143,17 @@ table {
 /* ------------------------------ Icons ------------------------------ */
 i {
   padding-right: 0.7rem;
+}
+
+/* ----------- Media Queries -------------- */
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    padding: 0 5rem;
+  }
 }
