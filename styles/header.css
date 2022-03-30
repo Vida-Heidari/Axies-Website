@@ -32,6 +32,8 @@
 
 .header__logo {
   grid-area: header__logo;
+
+  width: clamp(4rem, 20vw, 14rem);
 }
 .header__navbar {
   grid-area: header__navbar;
