@@ -34,7 +34,7 @@ function myDarkFunction() {
 }
 
 //---------------------------- Search Button ------------------------------
-let y = window.matchMedia("(min-width: 1201px)");
+let y = window.matchMedia("(min-width: 1301px)");
 
 document.querySelector(".search-icon").addEventListener("click", function () {
   if (y.matches) {

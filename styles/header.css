@@ -380,7 +380,7 @@
 }
 
 /*------------------------------------------ Media Query -----------------------------------*/
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1301px) {
   .nav-btn {
     display: none;
   }
