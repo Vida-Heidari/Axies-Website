@@ -116,7 +116,9 @@
   justify-content: center;
   align-items: center;
   width: 55rem;
-  background-image: url("../images/02_hero/img-bg-sliderhome2.png");
+  /* width: 100%;
+  height: auto; */
+  background-image: url("../../images/02_hero/img-bg-sliderhome2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

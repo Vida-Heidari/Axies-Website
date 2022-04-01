@@ -1,16 +1,26 @@
-/* .item-detailes {
+#item-detailes {
+  background-color: var(--dark-color);
   border: 2px solid lightblue;
-} */
+}
+
+.light__mode #item-detailes {
+  background-color: var(----white-color-color);
+}
+
+#item-detailes img {
+  width: 100%;
+  height: auto;
+}
 
 .item-detaile__wrapper {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: 1fr;
-  gap: 2rem;
+  gap: 8rem;
   grid-template-areas: "item-detaile__image item-detaile__content";
 
-  padding: 10rem;
+  padding: 8rem;
   width: fit-content;
   margin: auto;
   border: 2px solid red;
@@ -25,9 +35,83 @@
   border: 2px solid green;
 }
 
-/* -------------------- Item Detaile Image---------------------- */
+/* ------------------------- Item Detaile Image --------------------------- */
 .item-detaile__image img {
   border-radius: var(--border-radius-md);
 }
 
-/* -------------------- Item Detaile content---------------------- */
+/* --------------------------- Item Detaile content ---------------------------*/
+.content__meta-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.meta-items__left,
+.meta-items__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  cursor: pointer;
+}
+
+/* -------------- Meta Item Left ------------ */
+.meta-item__left {
+  background-color: var(--primary-color4);
+  padding: 0.9rem 1.5rem;
+  border-radius: var(--border-radius-3xl);
+  font-size: var(--font-size-xs);
+}
+
+.content__meta-items .eye {
+  margin-right: 1rem;
+}
+
+.content__meta-items .rate i,
+.content__meta-items .eye {
+  transition: all 0.3s ease;
+}
+
+.content__meta-items .rate:hover i {
+  color: red;
+}
+
+.content__meta-items .eye:hover i {
+  color: var(--accent-color);
+}
+
+/* -------------- Meta Item right ------------ */
+.meta-item__right {
+  background-color: var(--secondary-color);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  padding-left: 0.7rem;
+  padding-top: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.meta-items__right .share {
+  margin-right: 1rem;
+}
+
+.meta-item__right:hover {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+}
+
+/* --------------- Meta Light mode ----------------- */
+
+.light__mode .meta-item__left,
+.light__mode .meta-item__right {
+  background-color: var(--primary-color3);
+}
+
+.light__mode .meta-item__right:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
