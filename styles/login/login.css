@@ -61,7 +61,7 @@
 }
 
 .light__mode #login {
-  background-color: var(--light-color);
+  background-color: var(--white-color);
   color: var(--dark-color);
 }
 
