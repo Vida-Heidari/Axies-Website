@@ -115,3 +115,75 @@
 }
 
 /* --------------------------- Content Client Info ---------------------------*/
+.content__client-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.meta-info {
+  background-color: var(--secondary-color);
+  width: 50%;
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+}
+
+.client1 {
+  margin-right: 2rem;
+}
+
+.client2 {
+  margin-left: 2rem;
+}
+
+.content__client-info .author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content__client-info .info {
+  margin-left: 1.5rem;
+  line-height: 1.5;
+  color: var(--primary-color4);
+  font-size: 1.3rem;
+}
+
+.content__client-info .info h6 {
+  font-size: 1.6rem;
+  color: var(--white-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.content__client-info .info h6:hover {
+  color: var(--accent-color);
+}
+
+.content__client-info .author .avatar {
+  width: 44px;
+  height: 44px;
+}
+
+.content__client-info .author .avatar img {
+  border-radius: var(--border-radius-lg);
+}
+
+/* ------------- Client Light Mode --------------- */
+.light__mode .meta-info {
+  background-color: var(--primary-color3);
+}
+
+.light__mode .content__client-info .info {
+  color: var(--primary-color6);
+}
+
+.light__mode .content__client-info .info h6 {
+  color: var(--dark-color);
+  transition: all 0.3s ease;
+}
+
+.content__client-info .info h6:hover {
+  color: var(--accent-color);
+}
