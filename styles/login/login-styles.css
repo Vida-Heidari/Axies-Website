@@ -1,7 +1,7 @@
-@import "./../00-global/utilities.css";
-@import "./../00-global/buttons.css";
-@import "./../00-global/goTopButton.css";
-@import "./../main/header.css";
+@import "../00-global/utilities.css";
+@import "../00-global/buttons.css";
+@import "../00-global/goTopButton.css";
+@import "../main/header.css";
 @import "../login/login-header.css";
 @import "../login/login.css";
-@import "./../main/footer.css";
+@import "../main/footer.css";
