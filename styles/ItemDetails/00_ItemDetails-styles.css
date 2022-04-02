@@ -2,7 +2,7 @@
 @import "../../styles/00-global/buttons.css";
 @import "../../styles/00-global/goTopButton.css";
 @import "../../styles/main/header.css";
-@import "../../styles/ItemDetails/itemDetailes-header.css";
-@import "../../styles/ItemDetails/ItemDetails.css";
-@import "../../styles/ItemDetails/itemDetailes-MainContent.css";
+@import "../../styles/ItemDetails/01_itemDetailes-header.css";
+@import "../../styles/ItemDetails/03_ItemDetails.css";
+@import "../../styles/ItemDetails/04_itemDetailes-MainContent.css";
 @import "../../styles/main/footer.css";

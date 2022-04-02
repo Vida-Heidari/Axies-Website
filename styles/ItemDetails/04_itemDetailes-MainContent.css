@@ -1,5 +1,5 @@
-@import "../ItemDetails/client-info.css";
-@import "../ItemDetails/meta_item-detailes.css";
+@import "../ItemDetails/05_client-info.css";
+@import "../ItemDetails/06_meta_item-detailes.css";
 
 #item-detailes {
   background-color: var(--dark-color);
