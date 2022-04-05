@@ -76,6 +76,11 @@
   padding-bottom: 1rem;
   margin: 1rem 0;
   border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.tab-content .bid-history-list .content:hover {
+  transform: translateX(1rem);
 }
 
 .tab-content::-webkit-scrollbar {
