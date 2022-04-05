@@ -51,6 +51,7 @@
 
 .content__client-info .author .avatar img {
   border-radius: var(--border-radius-lg);
+  width: 44px;
 }
 
 /* ------------- Client Light Mode --------------- */

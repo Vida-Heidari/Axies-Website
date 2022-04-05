@@ -12,7 +12,7 @@
   background-color: var(----white-color);
 }
 
-#item-detailes img {
+.item-detaile__wrapper img {
   width: 100%;
   height: auto;
 }
