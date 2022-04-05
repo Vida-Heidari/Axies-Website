@@ -115,8 +115,9 @@
 }
 
 .client .author-box .author-info .name h6 {
-  margin-right: 0.6rem;
   font-size: var(--font-size-xs2);
+  color: var(--light-color);
+  margin-right: 0.6rem;
   transition: all 0.3s ease;
 }
 
@@ -126,4 +127,26 @@
 
 .client .author-box .author-info .time {
   font-size: var(--font-size-xs);
+}
+
+/* ------------- Light Mode ----------------- */
+.light__mode .client .author-box .author-info .name h6 {
+  color: var(--dark-color);
+}
+
+.light__mode .client .author-box .author-info .name h6:hover {
+  color: var(--accent-color);
+}
+
+.light__mode .tab-content::-webkit-scrollbar-track {
+  background-color: #8a8aa0;
+}
+
+.light__mode .tab-content::-webkit-scrollbar-thumb {
+  background-color: var(--dark-color);
+}
+
+.light__mode .content__flat-tabs .menu-tab,
+.light__mode .tab-content .bid-history-list .content {
+  border-bottom: 1px solid var(--primary-color4);
 }
