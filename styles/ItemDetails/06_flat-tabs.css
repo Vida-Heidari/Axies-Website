@@ -79,9 +79,7 @@
 }
 
 .tab-content::-webkit-scrollbar {
-  /* height: 30px; */
-  width: 4px;
-  /* padding-right: 0.5rem; */
+  width: 1px;
 }
 
 .tab-content::-webkit-scrollbar-track {

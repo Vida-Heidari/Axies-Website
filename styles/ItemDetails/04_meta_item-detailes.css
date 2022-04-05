@@ -14,7 +14,7 @@
   background-color: var(--secondary-color);
   width: 50%;
   border-radius: var(--border-radius-lg);
-  padding: 1.5rem 3rem;
+  padding: 1.5rem;
 }
 
 .content__meta--item-detailes .meta-price {
@@ -38,7 +38,7 @@
 }
 
 .price-box h5 {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs2);
   margin-right: 0.5rem;
 }
 
