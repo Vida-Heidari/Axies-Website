@@ -17,8 +17,20 @@
   cursor: pointer;
 }
 
+.content__flat-tabs .menu-tab li {
+  transition: all 0.3s ease-in-out;
+}
+
 .content__flat-tabs .menu-tab li.active {
   color: var(--accent-color);
+}
+
+.content__flat-tabs .menu-tab li:hover.active {
+  opacity: 1;
+}
+
+.content__flat-tabs .menu-tab li:hover {
+  opacity: 0.8;
 }
 
 .content__flat-tabs .menu-tab li.active::after {
