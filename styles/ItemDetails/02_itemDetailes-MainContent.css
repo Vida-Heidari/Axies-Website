@@ -1,6 +1,7 @@
-@import "../ItemDetails/05_client-info.css";
-@import "../ItemDetails/06_meta_item-detailes.css";
-@import "../ItemDetails/07_placeBidBtn.css";
+@import "../ItemDetails/03_client-info.css";
+@import "../ItemDetails/04_meta_item-detailes.css";
+@import "../ItemDetails/05_placeBidBtn.css";
+@import "../ItemDetails/06_flat-tabs.css";
 
 #item-detailes {
   background-color: var(--dark-color);
@@ -137,4 +138,4 @@
   color: var(--primary-color6);
 }
 
-/* ------------------------- Place Bid Button --------------------------- */
+/* ------------------------- Tabs --------------------------- */
