@@ -129,7 +129,7 @@
   font-size: var(--font-size-xs);
 }
 
-/* ------------- Light Mode ----------------- */
+/* ------------------- Light Mode ------------------- */
 .light__mode .client .author-box .author-info .name h6 {
   color: var(--dark-color);
 }
