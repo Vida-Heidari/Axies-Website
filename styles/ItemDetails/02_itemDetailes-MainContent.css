@@ -5,7 +5,6 @@
 
 #item-detailes {
   background-color: var(--dark-color);
-  border: 2px solid lightblue;
 }
 
 .light__mode #item-detailes {
@@ -25,7 +24,6 @@
   padding: 8rem;
   width: fit-content;
   margin: auto;
-  border: 2px solid red;
 }
 
 .content__title h1 {
@@ -45,7 +43,6 @@
 /* --------------------------- Item Detaile content ---------------------------*/
 
 .item-detaile__content {
-  border: 2px solid green;
   width: 40%;
   margin-left: 5rem;
 }
