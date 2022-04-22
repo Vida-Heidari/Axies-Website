@@ -28,41 +28,42 @@
 
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: Repeat(auto-fill, minmax(350px, 1fr));
   grid-template-rows: 1fr;
   gap: 2rem;
-  grid-template-areas: "your-wallet creat-collection add-nfts list-theme";
+  /* grid-template-areas: "your-wallet creat-collection add-nfts list-theme"; */
 
   text-align: center;
 }
 
-.your-wallet {
+/* .your-wallet {
   grid-area: your-wallet;
-}
+}*/
 
 .your-wallet i {
   background-color: var(--accent-color);
 }
 
-.creat-collection {
+/* .creat-collection {
   grid-area: creat-collection;
-}
+} */
 
 .creat-collection i {
   background-color: #47a432;
 }
 
-.add-nfts {
+/*.add-nfts {
   grid-area: add-nfts;
-}
+} */
 
 .add-nfts i {
   background-color: #9835fb;
 }
 
-.list-theme {
+/* .list-theme {
   grid-area: list-theme;
-}
+} */
 
 .nfts__content i {
   font-size: var(--font-size-md);

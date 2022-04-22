@@ -81,6 +81,7 @@
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: Repeat(auto-fill, minmax(350px, 1fr)); */
   grid-template-rows: 1fr;
   gap: 0px 20px;
   grid-template-areas: "post1 post2 post3";
@@ -264,7 +265,7 @@
       "post3 .";
   }
 
-  .collection__posts .post1 {
+  /* .collection__posts .post1 {
     grid-area: post1;
   }
   .collection__posts .post2 {
@@ -272,5 +273,19 @@
   }
   .collection__posts .post3 {
     grid-area: post3;
+  } */
+}
+
+@media screen and (max-width: 1099px) {
+  .collection__posts {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    grid-template-areas:
+      "post1"
+      "post2"
+      "post3";
   }
 }

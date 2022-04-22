@@ -12,6 +12,8 @@
   padding: 2rem 1rem;
   border-bottom-left-radius: var(--border-radius-md);
   border-bottom-right-radius: var(--border-radius-md);
+
+  overflow: hidden;
 }
 
 .light__mode #header {
@@ -381,6 +383,10 @@
 
 /*------------------------------------------ Media Query -----------------------------------*/
 @media screen and (min-width: 1301px) {
+  #header {
+    overflow: unset;
+  }
+
   .nav-btn {
     display: none;
   }
