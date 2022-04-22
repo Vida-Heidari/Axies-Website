@@ -1,0 +1,52 @@
+#wrapper {
+  background: url("../../images/07_log-in/bg.jpg");
+  padding-bottom: 2rem;
+}
+
+#header {
+  background-color: transparent;
+}
+
+.light__mode #header {
+  background: transparent;
+}
+
+#Profile__head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.profile__title {
+  margin-bottom: 2rem;
+  font-size: var(--font-size-lg);
+  color: var(--light-color);
+}
+
+.profile__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--light-color);
+}
+
+.profile__content a {
+  margin: 0 2rem;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  color: var(--border-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.profile__content a:hover {
+  color: var(--light-color);
+}
+
+.profile__content .active {
+  color: var(--light-color);
+}
