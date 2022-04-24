@@ -1,3 +1,5 @@
+@import "../Profile/03_Profile-forms.css";
+
 #main {
   padding: 8rem 0;
 }
@@ -82,13 +84,11 @@
 
   padding-right: 1.5rem;
   padding-left: 1.5rem;
-  border: 2px solid blue;
 }
 
 .content__upload-profile {
   width: 100%;
   padding-left: 5rem;
-  border: 2px solid violet;
 }
 
 .title-create-item {
@@ -96,6 +96,8 @@
   line-height: 22px;
   margin-bottom: 1.7rem;
 }
+
+/* -------------------------------- Profile Options -------------------------------- */
 
 .profile__options {
   display: flex;
@@ -105,7 +107,6 @@
   gap: 3rem;
   height: 100%;
   margin-bottom: 2rem;
-  border: 2px solid green;
 }
 
 .profile__options form {

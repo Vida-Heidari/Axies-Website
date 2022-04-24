@@ -97,3 +97,21 @@
 .light__mode .btn__fourthly:hover i {
   color: var(--white-color);
 }
+
+/*--------------------- Social Profile Btn ------------------*/
+.social-profile__btn {
+  width: fit-content;
+  color: var(--white-color);
+  box-shadow: inset 0 0 0 0.2rem var(--accent-color);
+  background-color: var(--accent-color);
+  font-size: var(--font-size-xs);
+  transition: all 0.3s ease;
+
+  padding: 11.5px 30px;
+  font-size: 14px;
+  margin-top: 2rem;
+}
+
+.social-profile__btn:hover {
+  opacity: 0.8;
+}

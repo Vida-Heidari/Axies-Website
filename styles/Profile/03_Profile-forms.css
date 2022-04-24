@@ -1,0 +1,78 @@
+.profile__form {
+  height: 100%;
+}
+
+.profile__information-form {
+  display: flex;
+  margin-left: -4rem;
+}
+/* ------------ Info Account ---------- */
+.info-account {
+  width: calc(50% - 4rem);
+  margin-left: 4rem;
+}
+
+.title-create-item h4 {
+  font-size: var(--font-size-md);
+}
+
+.info-account fieldset,
+.info-social fieldset {
+  margin-bottom: 2.5rem;
+  border: none;
+}
+
+.info-account fieldset .info-account__title,
+.info-social fieldset .info-account__title {
+  color: var(--white-color);
+  font-size: var(--font-size-xs2);
+  line-height: 2.2rem;
+  font-weight: normal;
+  margin-bottom: 0.7rem;
+}
+
+.profile__form input,
+.profile__form textarea {
+  /* color: red; */
+  width: 100%;
+  border-radius: var(--border-radius-md);
+  border: none;
+  background: transparent;
+  border: 1px solid rgba(138, 138, 160, 0.3);
+}
+
+.profile__form textarea {
+  resize: vertical;
+}
+
+.profile__form input[type="text"],
+.profile__form input[type="email"],
+.profile__form textarea {
+  font-size: var(--font-size-xs2);
+  line-height: 2.2rem;
+  color: var(--primary-color8);
+  padding: 1.2rem 1.5rem 1rem 2rem;
+}
+
+.profile__form textarea::placeholder,
+.profile__form input[type="email"]::placeholder,
+.profile__form input[type="text"]::placeholder,
+.profile__form input[type="email"]::placeholder {
+  font-size: var(--font-size-xs2);
+  line-height: 2.2rem;
+  color: var(--border-color);
+}
+
+/* ------------ Info Social ---------- */
+.info-social {
+  width: calc(50% - 4rem);
+  margin-left: 4rem;
+}
+
+.info-social .connect i {
+  font-size: var(--font-size-md);
+}
+
+.submit-btn:hover {
+  color: var(--accent-color);
+}
