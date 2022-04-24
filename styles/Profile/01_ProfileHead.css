@@ -25,7 +25,7 @@
   color: var(--light-color);
 }
 
-.profile__content {
+.head-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34,7 +34,7 @@
   color: var(--light-color);
 }
 
-.profile__content a {
+.head-links a {
   margin: 0 2rem;
   font-size: var(--font-size-sm);
   font-weight: 500;
@@ -43,10 +43,10 @@
   transition: all 0.3s ease-in-out;
 }
 
-.profile__content a:hover {
+.head-links a:hover {
   color: var(--light-color);
 }
 
-.profile__content .active {
+.head-links .active {
   color: var(--light-color);
 }

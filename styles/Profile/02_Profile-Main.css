@@ -79,4 +79,61 @@
 
 .profile__content {
   grid-area: profile__content;
+
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  border: 2px solid blue;
+}
+
+.content__upload-profile {
+  width: 100%;
+  padding-left: 5rem;
+  border: 2px solid violet;
+}
+
+.title-create-item {
+  font-size: var(--font-size-md);
+  line-height: 22px;
+  margin-bottom: 1.7rem;
+}
+
+.profile__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+  margin-bottom: 2rem;
+  border: 2px solid green;
+}
+
+.profile__options form {
+  width: 32%;
+  height: 100%;
+  /* padding: 3.3% 2%;
+  border-radius: var(--border-radius-xl); */
+  border: 2px solid yellow;
+}
+
+.profile__options form .upload-file {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+  height: 100%;
+  padding: 8% 5%;
+  margin-bottom: 0;
+  border: 2px solid red;
+}
+
+.upload-file input[type="file"] {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 15rem;
+  height: 4.8rm;
+  cursor: pointer;
 }
