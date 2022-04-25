@@ -47,6 +47,7 @@
 
 .profile__form input[type="text"],
 .profile__form input[type="email"],
+.profile__form input[type="url"],
 .profile__form textarea {
   font-size: var(--font-size-xs2);
   line-height: 2.2rem;
@@ -57,10 +58,34 @@
 .profile__form textarea::placeholder,
 .profile__form input[type="email"]::placeholder,
 .profile__form input[type="text"]::placeholder,
-.profile__form input[type="email"]::placeholder {
+.profile__form input[type="url"]::placeholder {
   font-size: var(--font-size-xs2);
   line-height: 2.2rem;
   color: var(--border-color);
+}
+
+.profile__form input:focus,
+.profile__form input:active,
+.profile__form textarea:focus,
+.profile__form textarea:active {
+  color: var(--light-color);
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+
+/* ------------ Light Mode ---------- */
+.light__mode .profile__form input:focus,
+.light__mode .profile__form input:active,
+.light__mode .profile__form textarea:focus,
+.light__mode .profile__form textarea:active {
+  color: var(--footer-dark-color);
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+
+.light__mode .info-account fieldset .info-account__title,
+.light__mode .info-social fieldset .info-account__title {
+  color: var(--footer-dark-color);
 }
 
 /* ------------ Info Social ---------- */
@@ -75,4 +100,17 @@
 
 .submit-btn:hover {
   color: var(--accent-color);
+}
+
+/* ---------------- Media Queries ---------------- */
+@media only screen and (max-width: 1199px) {
+  /* .info-social {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .info-account {
+    width: 100%;
+    margin-left: 0;
+  } */
 }
