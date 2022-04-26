@@ -51,6 +51,12 @@
   /* border: 2px solid red; */
 }
 
+.light__mode .profile__card {
+  background-color: var(--withe-color);
+  box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(128, 128, 128, 0.097);
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(128, 128, 128, 0.097);
+}
+
 .profile__about .card-media img {
   border-radius: var(--border-radius-xl);
   width: 100%;
@@ -105,10 +111,24 @@
   transition: all 0.3s ease;
 }
 
+.light__mode .profile__about #custom-btn,
+.light__mode .profile__about #delete-btn {
+  background-color: var(--primary-color7);
+  box-shadow: inset 0 0 0 0.2rem var(--primary-color7);
+  color: var(--accent-color);
+}
+
 .profile__about #custom-btn:hover,
 .profile__about #delete-btn:hover {
   background: var(--white-color);
   color: var(--accent-color);
+}
+
+.light__mode .profile__about #custom-btn:hover,
+.light__mode .profile__about #delete-btn:hover {
+  background-color: var(--accent-color);
+  box-shadow: inset 0 0 0 0.2rem var(--accent-color);
+  color: var(--white-color);
 }
 
 /* .profile-btn {
