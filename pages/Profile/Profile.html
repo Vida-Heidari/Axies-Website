@@ -396,9 +396,9 @@
         <div class="profile__about">
           <div class="profile__card">
             <div class="card-media">
-              <img src="../../images/09_profile/avata_profile.jpg" alt="" />
+              <img class="profile-img" src="../../images/09_profile/avata_profile.jpg" alt="" />
             </div>
-            <div class="upload-profile">
+            <!-- <div class="upload-profile">
               <a href="#" class="upload-btn profile-btn">Upload New Photo</a>
               <input
                 type="file"
@@ -407,8 +407,19 @@
                 required
               />
             </div>
-            <a href="#" class="profile__delete-btn profile-btn">Delete</a>
-          </div>
+            <a href="#" class="profile__delete-btn profile-btn">Delete</a> -->
+
+
+             <div class="card-upload__content">
+              <div class="card-media__content--icon">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
+              <div class="content__text">Drag and drop image here</div>
+            </div>
+
+            <input type="file" id="default-btn" hidden />
+            <button id="custom-btn">Upload New Photo</button>
+            <button id="delete-btn">Delete</button>
         </div>
 
         <div class="profile__content">
@@ -416,17 +427,6 @@
             <h4 class="title-create-item">Choose your Cover image</h4>
 
             <div class="profile__options">
-              <!-- <form action="#" class="options__form">
-                <label class="upload-file">
-                  <input
-                    type="file"
-                    name="file"
-                    id="input-file"
-                    class="input-file"
-                  />
-                </label>
-              </form> -->
-
               <div class="drag-area">
                 <button class="btn btn__thirdly drag__btn">
                   <header class="drag-header">Upload File</header>
@@ -649,5 +649,6 @@
 
     <script src="../../JavaScript/script.js"></script>
     <script src="../../JavaScript/profile/dragAndDrop.js"></script>
+    <script src="../../JavaScript/profile/cardUploadImage.js"></script>
   </body>
 </html>
