@@ -78,6 +78,7 @@
   grid-template-rows: 1fr;
   gap: 3rem 3rem;
   grid-template-areas: "post1 post2 post3 post4";
+  gap: 3rem;
   width: fit-content;
   margin: auto;
 }
@@ -281,7 +282,8 @@
 }
 
 /*------------------------- Media Queries -------------------------*/
-@media screen and (min-width: 1200px) and (max-width: 1450px) {
+
+@media screen and (max-width: 1200px) {
   .live__posts {
     display: grid;
     grid-auto-columns: 1fr;
@@ -292,20 +294,37 @@
       "post1 post2 post3"
       "post4 . .";
   }
+}
 
-  .post1 {
-    grid-area: post1;
+@media screen and (max-width: 992px) {
+  .live__posts {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    grid-template-areas:
+      "post1 post2"
+      "post4 post3";
   }
-  .post2 {
-    grid-area: post2;
-  }
-  .post3 {
-    grid-area: post3;
-  }
-  .post4 {
-    grid-area: post4;
-  }
+}
 
+@media screen and (max-width: 768px) {
+  .live__posts {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    grid-template-areas:
+      "post1"
+      "post2"
+      "post3"
+      "post4";
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1450px) {
   .post__title h3 {
     font-size: var(--font-size-xs2);
     font-weight: 700;
@@ -334,69 +353,10 @@
 
   .post__place-bid {
     font-size: var(--font-size-xs);
-    /* left: 27.5%; */
   }
 
   .post__timer {
     font-size: var(--font-size-xs);
-    /* left: 28%; */
     padding: 1rem 1.5rem;
   }
 }
-
-/* @media screen and (min-width: 133px) and (max-width: 1500px) {
-} */
-
-/* @media screen and (min-width: 300) {
-  .live__posts {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, minmax(0, 1fr));
-    gap: 2rem 2rem;
-    grid-template-areas:
-      "post1"
-      "post2"
-      "post3"
-      "post4 ";
-  }
-
-  .post1 {
-    grid-area: post1;
-  }
-  .post2 {
-    grid-area: post2;
-  }
-  .post3 {
-    grid-area: post3;
-  }
-  .post4 {
-    grid-area: post4;
-  }
-}
-/*----------------------------- 688 px---------------------------------*/
-/* @media screen and (min-width: 688px) {
-  .live__posts {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem 2rem;
-    grid-template-areas:
-      "post1 post2"
-      "post3 post4 ";
-  }
-
-  .post1 {
-    grid-area: post1;
-  }
-  .post2 {
-    grid-area: post2;
-  }
-  .post3 {
-    grid-area: post3;
-  }
-  .post4 {
-    grid-area: post4;
-  }
-} */
