@@ -9,12 +9,10 @@
 .footer__wrapper {
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.3fr;
+  grid-template-columns: Repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: 1fr;
   gap: 2rem;
-  grid-template-areas: "footer__about-site footer__my-account footer__resources footer__company footer__subscribe";
-
-  padding: 10rem 0;
+  padding: 3rem 1.5rem;
 }
 
 #footer h4 {
@@ -43,46 +41,14 @@
   border-bottom: 1px solid var(--accent-color);
 }
 
-/* .light__mode #footer .link {
-  color: var(--dark-color);
-}
-
-.light__mode #footer .link:hover {
-  color: var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
-} */
-
 /*--------------------------- About Site -------------------------*/
-.footer__about-site {
-  grid-area: footer__about-site;
-}
-
-/* .light__mode .footer__about-site {
-  color: var(--dark-color);
-} */
 
 .footer__about-site p {
   font-size: var(--font-size-xs2);
 }
-/*--------------------------- My Account -------------------------*/
-.footer__my-account {
-  grid-area: footer__my-account;
-}
-
-/*--------------------------- Resourcess -------------------------*/
-.footer__resources {
-  grid-area: footer__resources;
-}
-
-/*--------------------------- Company -------------------------*/
-.footer__company {
-  grid-area: footer__company;
-}
 
 /*--------------------------- Subscribe -------------------------*/
 .footer__subscribe {
-  grid-area: footer__subscribe;
-
   justify-self: start;
 }
 
@@ -167,4 +133,23 @@
 .light__mode .social i:hover {
   background-color: var(--accent-color);
   color: var(--white-color);
+}
+
+/* ------------- Media Queries ------------- */
+@media screen and (max-width: 320px) {
+  #footer .container {
+    padding: 0;
+  }
+
+  .footer__about-site,
+  .footer__my-account,
+  .footer__resources,
+  .footer__company,
+  .footer__company {
+    padding-left: 3rem;
+  }
+
+  /* #footer .footer__wrapper {
+    padding: 3rem 0;
+  } */
 }
