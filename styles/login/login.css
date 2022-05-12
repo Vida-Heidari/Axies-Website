@@ -220,30 +220,48 @@ form #submit:hover {
 }
 
 /* --------------------------- Media Queries---------------------------------*/
-@media screen and (max-width: 1899px) and (min-width: 1600px) {
+@media screen and (max-width: 1899px) {
   .or::before,
   .or::after {
     width: 25rem;
   }
 }
 
-@media screen and (max-width: 1599px) and (min-width: 1350px) {
+@media screen and (max-width: 1600px) {
   .or::before,
   .or::after {
     width: 20rem;
   }
 }
 
-@media screen and (max-width: 1349px) and (min-width: 1115px) {
+@media screen and (max-width: 1350px) {
   .or::before,
   .or::after {
     width: 15rem;
   }
 }
 
-@media screen and (max-width: 1114px) and (min-width: 1000px) {
+@media screen and (max-width: 1115px) {
   .or::before,
   .or::after {
     width: 9rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #login {
+    padding: 10rem 0;
+    margin-bottom: 5rem;
+  }
+  .or::before,
+  .or::after {
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .or::before,
+  .or::after {
+    width: 3rem;
   }
 }
