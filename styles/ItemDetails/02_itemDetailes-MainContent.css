@@ -13,28 +13,32 @@
 
 .item-detaile__wrapper img {
   width: 100%;
-  /* height: auto; */
 }
 
-.item-detaile__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+#item-detailes .item-detaile__wrapper {
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5rem;
+  grid-template-areas: "item-detaile__image item-detaile__content";
 
+  justify-items: center;
+  align-items: center;
+  width: 100%;
   padding: 8rem;
-  width: fit-content;
   margin: auto;
 }
 
 .content__title h1 {
-  font-size: var(--font-size-lg);
+  font-weight: 900;
+  font-size: clamp(1rem, 5vw, 2.5rem);
 }
 
 /* ------------------------- Item Detaile Image --------------------------- */
 .item-detaile__image {
-  width: 40%;
-  margin-right: 5rem;
+  grid-area: item-detaile__image;
 }
 
 .item-detaile__image img {
@@ -42,10 +46,8 @@
 }
 
 /* --------------------------- Item Detaile content ---------------------------*/
-
 .item-detaile__content {
-  width: 40%;
-  margin-left: 5rem;
+  grid-area: item-detaile__content;
 }
 
 /* ------------------------------ Meta Item ------------------------------*/
@@ -71,7 +73,6 @@
   background-color: var(--footer-dark-color);
   padding: 0.9rem 1.5rem;
   border-radius: var(--border-radius-3xl);
-  font-size: var(--font-size-xs);
 }
 
 .content__meta-items .eye {
@@ -136,4 +137,54 @@
   color: var(--primary-color6);
 }
 
-/* ------------------------- Tabs --------------------------- */
+/* ---------------- Media Queries ---------------- */
+@media screen and (max-width: 992px) {
+  #item-detailes .item-detaile__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: "item-detaile__content";
+  }
+
+  .item-detaile__image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #item-detailes .item-detaile__wrapper {
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  .meta-info {
+    padding: 0.5rem;
+  }
+
+  .content__client-info .client1 {
+    margin-right: 0.5rem;
+  }
+  .content__client-info .client2 {
+    margin-left: 0.5rem;
+  }
+
+  .content__client-info .info,
+  .content__client-info .info h6,
+  .content__meta--item-detailes .title,
+  .price-box h5,
+  .count-down .timer {
+    font-size: clamp(0.5rem, 5vw, 1.2rem);
+  }
+
+  .content__meta--item-detailes .meta-price {
+    margin-right: 0.5rem;
+  }
+
+  .content__meta--item-detailes .count-down {
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #item-detailes .item-detaile__wrapper {
+    padding: 0.5rem;
+  }
+}
