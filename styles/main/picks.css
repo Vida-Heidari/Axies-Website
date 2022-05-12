@@ -76,6 +76,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  /* gap: rem; */
 }
 
 /* ------------------------------ Picks posts------------------------------ */
@@ -84,9 +86,9 @@
 
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-rows: 1fr 1fr;
-  gap: 4rem 2rem;
+  gap: 3rem 3rem;
   grid-template-areas:
     "post1 post2 post3 post4"
     "post5 post6 post7 post8";
@@ -123,7 +125,7 @@
 .picks__post {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
   background-color: var(--secondary-color);
@@ -292,41 +294,54 @@
 }
 
 /*------------------------- Media Queries -------------------------*/
-@media screen and (min-width: 900px) and (max-width: 1220px) {
+@media screen and (max-width: 1200px) {
   .picks__posts {
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
     gap: 2rem;
     grid-template-areas:
       "post1 post2 post3"
       "post4 post5 post6"
       "post7 post8 .";
   }
+}
 
-  .post1 {
-    grid-area: post1;
+@media screen and (max-width: 992px) {
+  .picks__buttons .picks__buttons--left button {
+    margin: 0.5rem;
   }
-  .post2 {
-    grid-area: post2;
+
+  .picks__posts {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+    grid-template-areas:
+      "post1 post2"
+      "post3 post4"
+      "post5 post6"
+      "post7 post8";
   }
-  .post3 {
-    grid-area: post3;
-  }
-  .post4 {
-    grid-area: post4;
-  }
-  .post5 {
-    grid-area: post5;
-  }
-  .post6 {
-    grid-area: post6;
-  }
-  .post7 {
-    grid-area: post7;
-  }
-  .post8 {
-    grid-area: post8;
+}
+
+@media screen and (max-width: 768px) {
+  .picks__posts {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, minmax(0, 1fr));
+    gap: 2rem;
+    grid-template-areas:
+      "post1"
+      "post2"
+      "post3"
+      "post4"
+      "post5"
+      "post6"
+      "post7"
+      "post8";
   }
 }
