@@ -52,8 +52,6 @@ This is the HTML Template, only provide front-end HTML interface NO back-end for
 - [ ] Implement Sign Up page
 - [ ] Add other pages
 
-See the [open issues](https://github.com/dansalahi/PJ-Online-Studio/issues) for a full list of proposed features (and known issues).
-
 <!-- CONTRIBUTING -->
 
 ## Contributing
