@@ -80,8 +80,7 @@
   width: fit-content;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* grid-template-columns: Repeat(auto-fill, minmax(350px, 1fr)); */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: 1fr;
   gap: 0px 20px;
   grid-template-areas: "post1 post2 post3";
