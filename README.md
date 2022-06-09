@@ -38,9 +38,9 @@ This is the HTML Template, only provide front-end HTML interface NO back-end for
 
 ### Axies Pages
 
-- [Login] (https://vida-heidari.github.io/Axies-Website/pages/login/login.html)
-- [ItemDetails] (https://vida-heidari.github.io/Axies-Website/pages/ItemDetails/ItemDetails.html)
-- [EditProfile] (https://vida-heidari.github.io/Axies-Website/pages/Profile/Profile.html)
+- [Login](https://vida-heidari.github.io/Axies-Website/pages/login/login.html)
+- [ItemDetails](https://vida-heidari.github.io/Axies-Website/pages/ItemDetails/ItemDetails.html)
+- [EditProfile](https://vida-heidari.github.io/Axies-Website/pages/Profile/Profile.html)
 
   <!-- ROADMAP -->
 
