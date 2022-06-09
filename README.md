@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="./images/Axies demo.png" alt="Logo" width="180">
+    <img src="./images/Axies demo.png" alt="Logo" width="500">
 
   <h3 align="center">.: Axies| NFT Marketplace :.</h3>
 
@@ -24,7 +24,7 @@
 
 ## About The Project
 
-[![Axies| NFT Marketplace][images/axies demo.png]](https://example.com)
+[![Axies| NFT Marketplace]
 
 This is the HTML Template, only provide front-end HTML interface NO back-end for NFT Marketplace traders and creators.
 
