@@ -24,7 +24,7 @@
 
 ## About The Project
 
-[![Axies| NFT Marketplace][product-screenshot]](https://example.com)
+[![Axies| NFT Marketplace][images/axies demo.png]](https://example.com)
 
 This is the HTML Template, only provide front-end HTML interface NO back-end for NFT Marketplace traders and creators.
 
