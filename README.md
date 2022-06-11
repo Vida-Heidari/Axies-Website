@@ -24,7 +24,7 @@
 
 ## About The Project
 
-[![Axies| NFT Marketplace]
+<h5 align="center"> Axies| NFT Marketplace </h5>
 
 This is the HTML Template, only provide front-end HTML interface NO back-end for NFT Marketplace traders and creators.
 
