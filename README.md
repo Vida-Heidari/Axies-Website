@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="./images/Axies demo.png" alt="Logo" width="500">
+    <img src="./images/Axies demo.png" alt="Logo" width="700">
 
   <h3 align="center">.: Axies| NFT Marketplace :.</h3>
 
