@@ -6,8 +6,8 @@
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 2.5fr 20fr 2fr;
-  gap: 0 2rem;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 5rem;
   grid-template-areas:
     "picks__header"
     "picks__buttons"
