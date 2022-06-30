@@ -21,8 +21,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  /* padding: 3rem 0; */
+  align-content: center;
 }
 
 .sellers__header h3 {
@@ -71,46 +70,15 @@
 .sellers__about {
   grid-area: sellers__about;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  /* display: grid; 
+  display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: Repeat(auto-fill, minmax(100px, 1fr));
   grid-template-rows: 1fr;
-  gap: 0px 20px;
-  grid-template-areas: "seller1 seller2 seller3 seller4 seller5 seller6 seller7 seller8 seller9";*/
+  gap: 0 5rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
-
-/* .seller1 {
-  grid-area: seller1;
-}
-.seller2 {
-  grid-area: seller2;
-}
-.seller3 {
-  grid-area: seller3;
-}
-.seller4 {
-  grid-area: seller4;
-}
-.seller5 {
-  grid-area: seller5;
-}
-.seller6 {
-  grid-area: seller6;
-}
-.seller7 {
-  grid-area: seller7;
-}
-.seller8 {
-  grid-area: seller8;
-}
-.seller9 {
-  grid-area: seller9;
-} */
 
 .seller {
   display: flex;
@@ -169,10 +137,4 @@
 .seller__info h5 {
   font-size: var(--font-size-xs);
   opacity: 0.7;
-}
-
-/*------------------------- Media Queries -------------------------*/
-@media screen and (max-width: 1600px) {
-  .sellers__about {
-  }
 }
