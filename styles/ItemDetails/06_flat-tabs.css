@@ -52,6 +52,13 @@
   margin-top: 2rem;
 }
 
+.content__flat-tabs [data-tab-content] {
+  display: none;
+}
+.content__flat-tabs .active-content[data-tab-content] {
+  display: block;
+}
+
 .client .author-box {
   display: flex;
   flex-direction: row;
