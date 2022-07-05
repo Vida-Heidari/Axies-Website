@@ -27,13 +27,7 @@
   align-items: center;
 }
 
-.picks__header h3 {
-  font-size: var(--font-size-xl);
-}
-
 .picks__header h5 {
-  font-size: var(--font-size-xs2);
-  font-weight: 900;
   padding: 0.5rem;
 }
 
