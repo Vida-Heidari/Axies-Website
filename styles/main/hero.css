@@ -112,9 +112,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55rem;
-  /* width: 100%;
-  height: auto; */
+  width: 50rem;
   background-image: url("../../images/02_hero/img-bg-sliderhome2.png");
   background-repeat: no-repeat;
   background-position: center;
