@@ -289,12 +289,8 @@
   }
 }
 
-/* @media screen and (max-width: 576px) {
-  .collection__posts {
-    min-width: 30rem;
+@media screen and (max-width: 425px) {
+  #collection .conatiner {
+    padding: 0 2rem;
   }
-
-  .collection__post {
-    min-width: 30rem;
   }
-} */
