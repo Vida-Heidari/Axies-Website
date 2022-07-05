@@ -24,9 +24,9 @@
   align-content: center;
 }
 
-.sellers__header h3 {
+/* .sellers__header h3 {
   font-size: var(--font-size-xl);
-}
+} */
 
 .light__mode .seller__info h4 {
   color: var(--dark-color);
@@ -37,8 +37,8 @@
 }
 
 .sellers__icons i {
-  width: 4rem;
-  height: 4rem;
+  /* width: 4rem;
+  height: 4rem; */
   border-radius: 50%;
   border: 2px solid var(--accent-color);
   background-color: transparent;
