@@ -1,5 +1,6 @@
 #hero {
-  height: 70vh;
+  /* height: 70vh; */
+  margin-bottom: 10rem;
 }
 
 .hero__wrapper {
