@@ -168,3 +168,15 @@ i {
     padding: 0 5rem;
   }
 }
+
+h3 {
+  font-size: min(7vmin, 3.5rem);
+}
+
+h4 {
+  font-size: min(5vmin, 2rem);
+}
+
+h5 {
+  font-size: min(4vmin, 1.5rem);
+}
