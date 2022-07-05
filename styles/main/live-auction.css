@@ -24,13 +24,7 @@
   align-items: center;
 }
 
-.live__header h3 {
-  font-size: var(--font-size-xl);
-}
-
 .live__header h5 {
-  font-size: var(--font-size-xs2);
-  font-weight: 900;
   padding: 0.5rem;
 }
 
@@ -132,7 +126,7 @@
 
 .post h5 {
   font-size: var(--font-size-xs);
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .post h6 {
