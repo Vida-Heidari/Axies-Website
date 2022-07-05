@@ -18,9 +18,9 @@
   grid-area: nfts__header;
 }
 
-.nfts__header h2 {
+/* .nfts__header h2 {
   font-size: var(--font-size-xl);
-}
+} */
 
 /*----------------------------- NFTs Content---------------------------*/
 .nfts__content {
@@ -33,6 +33,10 @@
   gap: 2rem;
 
   text-align: center;
+}
+
+.nfts__content h4 {
+  margin-bottom: 1rem;
 }
 
 .your-wallet i {
